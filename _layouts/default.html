@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <title>>{% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-1.5.1.min.css" />
     <style>
       a {
@@ -19,6 +19,7 @@
           </div>
         </div>
     </header>
+    {{ content }}
   </body>
 </html>
 
