@@ -1,0 +1,65 @@
+---
+layout: default
+title: Hello
+---
+
+<section class="p-strip--accent">
+  <div class="row">
+    <div class="u-equal-height">
+      <div class="col-7 suffix-1 u-vertically-center">
+        <div>
+          <h1>Notes on development</h1>
+          <p class="p-heading--five">Articles and musings about web development, internet security and performance and general tech geekery</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <img style="padding-top: 2rem" src="https://assets.ubuntu.com/v1/f31d51e6-keyboard-inverted.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include twitter.html %}
+
+{% for post in site.posts %}
+  {% capture symetry %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if symetry == 'odd' %}
+    <div class="p-strip">
+      <div class="row">
+        <div class="u-equal-height u-no-margin--bottom">
+          <div class="col-8">
+            <h2>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+            </h2>
+            <p>{{ post.description }}</p>
+          </div>
+          <div class="col-4 prefix-1 u-vertically-center u-align--center">
+            {% if post.image_url %}
+              <a href="{{ post.url }}"><img alt="" role="presentation" src="{{ post.image_url }}" /></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <div class="p-strip--light">
+      <div class="row">
+        <div class="u-equal-height u-no-margin--bottom">
+          <div class="col-4 suffix-1 u-vertically-center u-align--center">
+            {% if post.image_url %}
+              <a href="{{ post.url }}"><img alt="" role="presentation" src="{{ post.image_url }}" /></a>
+            {% endif %}
+          </div>
+          <div class="col-7">
+            <h2>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+            </h2>
+            <p>{{ post.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

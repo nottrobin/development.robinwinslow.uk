@@ -13,52 +13,74 @@
         display: inline;
         margin: 0;
       }
+      .main-content {
+        font-size: 1.2em;
+      }
+      .date {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #888;
+      }
     </style>
   </head>
   <body>
     <header id="navigation" class="p-navigation--light">
+      <div class="row">
         <div class="p-navigation__banner">
           <div class="p-navigation__logo">
             <a href="https://robinwinslow.uk">robin</a>&nbsp;|&nbsp;<a href="/"><strong>development</strong></a>
           </div>
         </div>
+        <nav class="p-navigation__nav">
+          <span class="u-off-screen">
+            <a href="#main-content">Jump to main content</a>
+          </span>
+          <ul class="p-navigation__links">
+            <li class="p-navigation__link "><a href="/products">Products</a></li>
+            <li class="p-navigation__link "><a href="/services">Services</a></li>
+            <li class="p-navigation__link "><a href="/partners">Partners</a></li>
+            <li class="p-navigation__link "><a href="/about">About</a></li>
+            <li class="p-navigation__link "><a href="/careers">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="p-strip is-bordered">
-      <div class="row">
-        <div class="col-12">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-    <section class="p-strip--light is-deep">
-      <div class="row p-divider">
-        <div class="col-4 p-divider__block">
-          <h4 class="p-muted-heading">Domains from Robin</h4>
-          <ul class="p-list">
-            <li><a class="p-link--soft p-link--external" href="https://robinwinslow.uk">Homepage</a></li>
-          </ul>
-        </div>
-        <div class="col-4 p-divider__block">
-          <h4 class="p-muted-heading">My favourite posts</h4>
-          <ul class="p-list">
-            <li><a href="/NONEXISTENT">NONEXISTENT</a></li>
-          </ul>
-        </div>
-        <div class="col-4 p-divider__block">
-          <h4 class="p-muted-heading">Organisations I love</h4>
-          <ul class="p-list">
-            <li><a href="https://eff.org" class="p-link--external">EFF</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+
+    {{ content }}
+
     <footer class="p-footer u-no-margin--top" role="contentinfo">
-      <div class="row p-divider">
-        <div class="col-12 p-divider__block">
-          <p><strong>License</strong>: All my <a href="https://github.com/nottrobin/">personal code and design work</a> is <a href="https://wiki.creativecommons.org/wiki/Public_domain">public domain</a>. If you use my writing, please give me <a href="https://creativecommons.org/licenses/by/3.0/">attribution</a>.</p>
-          <p><strong>Contact details</strong>: <a href="mailto:development@robinwinslow.uk">development@robinwinslow.uk</a> | <a href="tel:07795070704">07795070704</a> | <a href="https://twitter.com/nottrobin">@nottrobin on Twitter</a></p>
+      <section class="p-strip is-shallow">
+        <div class="row p-divider">
+          <div class="col-4 p-divider__block">
+            <h4 class="p-muted-heading">Domains from Robin</h4>
+            <ul class="p-list">
+              <li><a class="p-link--soft p-link--external" href="https://robinwinslow.uk">Homepage</a></li>
+            </ul>
+          </div>
+          <div class="col-4 p-divider__block">
+            <h4 class="p-muted-heading">Organisations I love</h4>
+            <ul class="p-list">
+              <li><a href="https://eff.org" class="p-link--external">EFF</a></li>
+            </ul>
+          </div>
+          <div class="col-4 p-divider__block">
+            <h4 class="p-muted-heading">Contact me</h4>
+            <ul class="p-list">
+              <li><strong>Email</strong>: <a href="mailto:development@robinwinslow.uk" class="p-link--external">development@robinwinslow.uk</a></li>
+              <li><strong>Phone</strong>: <a href="tel:07795070704" class="p-link--external">07795070704</a></li>
+              <li><strong>Twitter</strong>: <a href="https://twitter.com/nottrobin" class="p-link--external">@nottrobin</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="p-strip is-shallow">
+        <div class="row p-divider">
+          <div class="col-12 p-divider__block">
+            <p>All my <a href="https://github.com/nottrobin/">personal code and design work</a> is <a href="https://wiki.creativecommons.org/wiki/Public_domain">public domain</a>. If you use my writing, please give me <a href="https://creativecommons.org/licenses/by/3.0/">attribution</a>.</p>
+          </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

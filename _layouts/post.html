@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="p-strip--light is-shallow">
+  <div class="row">
+    <div class="u-equal-height">
+      <div class="col-8 suffix-1 u-vertically-center">
+        <div>
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
+      <div class="col-3 u-vertically-center">
+        <img src="{{ page.image_url }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-strip is-bordered">
+  <div class="row main-content">
+    {{ content }}
+  </div>
+</div>
+
+{% assign indexes = site.posts.size | minus: 5 %}
+{% assign first_post = page.title.size | modulo: indexes %}
+
+{% include twitter.html %}
+
+<div class="p-strip--light is-deep">
+  <div class="row p-divider u-equal-height">
+    {% assign shown = 0 %}
+    {% for post in site.posts limit:5 offset:first_post %}
+      {% if shown == 4 %}{% break %}{% endif %}
+      {% if post.url != page.url %}
+        <div class="col-3 p-divider__block">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>{{ post.description }}</p>
+        </div>
+        {% assign shown = shown | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
