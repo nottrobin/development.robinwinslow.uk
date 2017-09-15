@@ -11,15 +11,17 @@ layout: default
         </div>
       </div>
       <div class="col-3 u-vertically-center">
-        <img src="{{ page.image_url }}" alt="" />
+        <img class="post-image" src="{{ page.image_url }}" alt="" />
       </div>
     </div>
   </div>
 </div>
 
 <div class="p-strip is-bordered">
-  <div class="row main-content">
-    {{ content }}
+  <div class="row">
+    <div class="col-12 main-content">
+      {{ content }}
+    </div>
   </div>
 </div>
 
