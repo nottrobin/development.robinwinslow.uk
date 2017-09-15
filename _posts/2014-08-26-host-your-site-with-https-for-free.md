@@ -2,6 +2,7 @@
 layout: post
 title: "Host your site with HTTPS for free"
 description: "How to get completely free HTTPS (SSL or TLS) encrypted website hosting with Redhat Openshift."
+image_url: https://assets.ubuntu.com/v1/19894b93-https+everywhere.png?w=230&h=160&mode=fill&bg=0000
 tags:
     - back-end
     - dev

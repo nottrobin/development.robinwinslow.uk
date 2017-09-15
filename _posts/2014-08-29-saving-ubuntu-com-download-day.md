@@ -2,6 +2,7 @@
 layout: post
 title: "Saving ubuntu.com on download day: caching location specific pages"
 description: "How we significantly reduced the load on the ubuntu.com servers by caching location-specific download pages."
+image_url: https://assets.ubuntu.com/v1/74ef0c00-ubuntu+location.png?h=160
 tags:
     - back-end
     - front-end

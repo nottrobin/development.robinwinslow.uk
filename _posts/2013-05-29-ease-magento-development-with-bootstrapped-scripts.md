@@ -2,6 +2,7 @@
 layout: post
 title: 'Ease Magento development with bootstrapped scripts'
 description: 'Mini scripts are super-helpful in magento development. This will explain how to bootstrap them and give a simple example of how to select a category and get its children.'
+image_url: https://icepay.com/wp-content/uploads/2014/10/magento-logo11.png
 tags:
     - dev
     - magento
@@ -52,7 +53,7 @@ ini_set('display_errors', 1);
 ?>
 ```
 
-Once you've done this, you can use the `Mage` static to [do whatever you like](http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-1-introduction-to-magento). 
+Once you've done this, you can use the `Mage` static to [do whatever you like](http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-1-introduction-to-magento).
 
 A use-case
 ===

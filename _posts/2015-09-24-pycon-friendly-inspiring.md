@@ -1,6 +1,7 @@
 ---
 title: Keynotes from my first PyCon - friendly and inspiring
 description: "A report on my experience of the keynote speeches at my first PyCon."
+image_url: https://assets.ubuntu.com/v1/ba50be85-pycon+uk+crown.png
 layout: post
 tags:
   - personal

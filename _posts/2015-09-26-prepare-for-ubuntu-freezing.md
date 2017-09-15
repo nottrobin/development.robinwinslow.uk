@@ -2,6 +2,7 @@
 title: Prepare for when Ubuntu freezes
 description: "I just discovered this one neat trick to free up RAM in Ubuntu even when my mouse and keyboard stop responding."
 layout: post
+image_url: http://www.monologuedb.com/wp-content/uploads/2011/05/Arnold-Schwarzenegger-Mr.-Freeze-Batman-and-Robin.jpg
 tags:
   - dev
   - personal

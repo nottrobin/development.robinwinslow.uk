@@ -2,6 +2,7 @@
 layout: post
 title: "Agile philosophy: A summary"
 description: "This is a short description of what Agile philosophy is all about, distinct from any Agile methodologies (like Scrum or Kanban). I wrote this in September of 2012."
+image_url: https://assets.ubuntu.com/v1/938f7a5b-agile.png?w=230&h=160&mode=fill&bg=0000
 tags:
     - dev
     - canonical

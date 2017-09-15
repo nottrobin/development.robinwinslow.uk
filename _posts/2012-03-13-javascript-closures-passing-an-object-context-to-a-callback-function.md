@@ -2,12 +2,13 @@
 title: "JavaScript closures &#58; Passing an Object context to a callback function"
 layout: post
 description: "A useful application for JavaScript Closures - passing object context."
+image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Parentesi_Graffe.svg/576px-Parentesi_Graffe.svg.png
 tags:
   - JavaScript
   - dev
   - front-end
 ---
- 
+
 This is the first really useful application for [JavaScript closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures) that I've found.
 
 <a id="problem"></a>
@@ -25,17 +26,17 @@ For example (you can try this example out in your browsers JS console if it has 
 ``` javascript
 var myOb = function(aString) {
 	this.aString = aString;
-	
+
 	// Callback for timer
 	this.callback = function() {
 		// We can't use "this" because it is just the window object
 		// But we can access an instance of the object through the global variable
 		console.log(globalString);
 	}
-	
+
 	// Attempt to make the object available to the callback by creating a global variable
 	globalString = this.aString;
-	
+
 	// Call the callback function after 1 second
 	window.setTimeout(this.callback, 1000);
 }
@@ -64,13 +65,13 @@ Here it is (once again feel free to try this in your browser's console):
 ``` javascript
 var myOb = function(aString) {
 	this.aString = aString;
-	
+
 	// Callback for timer
 	this.callback = function() {
 		// The arguement passed to this particular instance of myOb
 		console.log(this.aString);
 	}
-	
+
 	// Call the callback function after 1 second
 	window.setTimeout((function(caller) { return function() { caller.callback.apply(caller, arguments); } })(this), 1000);
 }
@@ -84,4 +85,4 @@ This should successfully output:
 	hello
 	world
 
-Problem solved. 
+Problem solved.

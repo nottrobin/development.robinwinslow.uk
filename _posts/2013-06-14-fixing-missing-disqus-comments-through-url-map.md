@@ -2,6 +2,7 @@
 layout: post
 title: "Fixing missing Disqus comments though the URL map tool"
 description: "I spent a while working out why comments stopped showing up on my blog posts. I eventually discovered the cause and worked out how to fix it through the Disqus URL map tool."
+image_url: https://assets.ubuntu.com/v1/111a748e-disqus.png
 tags:
     - blogging
     - dev

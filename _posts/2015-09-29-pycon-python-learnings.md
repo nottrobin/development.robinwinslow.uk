@@ -2,6 +2,7 @@
 title: Python learnings from PyCon
 description: "Interesting technical talks I heard at my first PyCon."
 layout: post
+image_url: https://pbs.twimg.com/profile_images/857898544640008194/Ya_WC28d.jpg
 tags:
   - dev
   - personal

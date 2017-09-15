@@ -2,6 +2,7 @@
 title: Getting Docker running on Ubuntu 14.04
 layout: post
 description: "There are more steps than there should be to get docker running on ubuntu 14.04. I outline them here."
+image_url: https://www.ubuntufree.com/wp-content/uploads/2016/09/Docker-Container-With-Ubuntu.png
 tags:
   - dev
   - back-end

@@ -2,6 +2,7 @@
 layout: post
 title: "Blog like a pro with static site generators - it's easier than you think"
 description: "Why technically proficient editors, bloggers, and especially web developers, should all use static site generators for their own sites"
+image_url: https://assets.ubuntu.com/v1/2fa38689-static+sites.png
 tags:
     - dev
     - blogging

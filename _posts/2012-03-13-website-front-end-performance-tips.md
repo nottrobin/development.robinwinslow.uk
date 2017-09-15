@@ -1,6 +1,7 @@
 ---
 title: Website front-end performance tips
 layout: post
+image_url: https://cdn.pixabay.com/photo/2013/07/12/19/33/snail-154986_1280.png
 tags:
   - dev
   - performance

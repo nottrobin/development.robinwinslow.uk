@@ -1,6 +1,7 @@
 ---
 title: 'Chrome v25 breaks layout of date field'
 description: 'Chrome ruined my day by introducing a serious breaking change in the update to v25. The HTML5 input date type is likely to display wrong.'
+image_url: https://assets.ubuntu.com/v1/1535bd80-broken+chrome.png
 tags:
     - front-end
     - dev

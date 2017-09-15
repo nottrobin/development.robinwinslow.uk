@@ -1,6 +1,7 @@
 ---
 title: What you can do if you stop supporting IE8
 description: The arguments for dropping support for IE8 in your website
+image_url: http://blog.sourcejockey.com/wp-content/uploads/2009/07/nomoreie6.png
 tags:
     - dev
     - front-end
@@ -15,7 +16,7 @@ In recent years we have said goodbye to widespread support for first [IE6](http:
 
 Google [dropped support for IE8](http://www.computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15) back in November,
 [37signals also](http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past).
-There are a [plethora](http://www.smashingmagazine.com/2011/11/03/%E2%80%9Cbut-the-client-wants-ie-6-support%E2%80%9D/) of 
+There are a [plethora](http://www.smashingmagazine.com/2011/11/03/%E2%80%9Cbut-the-client-wants-ie-6-support%E2%80%9D/) of
 [articles](http://www.rickwhittington.com/blog/should-my-website-support-internet-explorer-7/) out
 [there](http://j.eremy.net/are-you-still-supporting-ie7/) imploring people to drop support for Internet Explorer.
 

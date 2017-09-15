@@ -1,13 +1,14 @@
 ---
 title: TMUX and SSH auto-login with ssh-agent (finally!)
-description: The steps necessary to get TMUX ssh-agent correctly configured. 
+description: The steps necessary to get TMUX ssh-agent correctly configured.
 layout: post
+image_url: http://deployeveryday.com/img/setup_tmux.png
 tags:
   - unix
   - dev
   - back-end
 ---
- 
+
 I finally got this working, so I thought I'd blog about it.
 
 Here's what I wanted to achieve:
@@ -22,7 +23,7 @@ This is harder than you might think, as it requires several things to work toget
  - The public key added to the authorised_keys for each destination box
  - An ssh-agent environment running to automatically forward your keys for SSH connection.
  - Make sure you don't spawn a new ssh-agent each time you log in, as you'll end up with hundreds of orphaned processes.
- 
+
 It was the last step I was struggling with. To setup the first two steps [follow the guide here](http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/).
 
 However, if you then don't do the final step, it will always ask for a passphrase for your key whenever you try to SSH:
@@ -45,10 +46,10 @@ The solution to that is to make sure you start you ssh-agent with the "-a" optio
 
 if [ -z "$TMUX" ]; then
     # we're not in a tmux session
-    
+
     if [ ! -z "$SSH_TTY" ]; then
         # We logged in via SSH
-        
+
         # if ssh auth variable is missing
         if [ -z "$SSH_AUTH_SOCK" ]; then
             export SSH_AUTH_SOCK="$HOME/.ssh/.auth_socket"
@@ -81,4 +82,4 @@ fi
 set -g update-environment -r
 ```
 
-And win. Sorry it's not more simple. You'd think a lot of this would be the default use-case so it would just work out of the box, but sadly that's not the way the unix world works. 
+And win. Sorry it's not more simple. You'd think a lot of this would be the default use-case so it would just work out of the box, but sadly that's not the way the unix world works.

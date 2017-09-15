@@ -1,6 +1,7 @@
 ---
 title: "How to host your static site with HTTPS on GitHub Pages and CloudFlare"
 description: "The combination of the free services from CloudFlare and Github Pages make it incredibly easy to host a secure website."
+image_url: https://jonnyjordan.com/wp-content/uploads/2015/12/cloudflare-flexible-ssl-https-825x480.png
 tags:
   - dev
 layout: post

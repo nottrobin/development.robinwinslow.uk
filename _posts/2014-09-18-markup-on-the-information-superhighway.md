@@ -2,6 +2,7 @@
 layout: post
 title: "The importance of markup on the information superhighway"
 description: "A fairly informal piece about the importance of understanding markup and the internet."
+image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png
 tags:
     - front-end
     - dev

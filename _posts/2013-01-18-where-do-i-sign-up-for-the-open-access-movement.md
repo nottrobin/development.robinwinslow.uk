@@ -4,12 +4,13 @@ description:
     Learning all about Aaron Swartz after he committed suicide has made me (like many others) want to
     do more for the Open Access movement. Where do I sign up?
 layout: post
+image_url: http://blogs.plos.org/everyone/files/2015/07/Open-Access-logo.png
 tags:
   - dev
   - politics
   - personal
 ---
- 
+
 I really wish I had the emotional eloquence to express what John Grubb Atkinson did so beautifully:
 
 Aaron Swartz is what I wish I was. I am a bright technologist, but I've never built anything of note.

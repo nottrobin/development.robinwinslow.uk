@@ -2,6 +2,7 @@
 layout: post
 title: "PHP best practices"
 description: "A bunch of best practices for PHP which I wrote back in 2012"
+image_url: https://newrelic.com/assets/pages/apm/php/php-elephant-logo-bd4f9d83be8c8563248fe4793f90bae7.png
 tags:
     - dev
     - back-end

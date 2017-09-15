@@ -2,6 +2,7 @@
 layout: post
 title: "A summary of python code style conventions"
 description: "Recently I've been learning Python. I just found out about PEP 8 and PEP 257, which are guidelines for how to write python code. To solidify them in my mind, I'm going to summarise them here."
+image_url: https://assets.ubuntu.com/v1/bd52907f-python+coding.png
 tags:
     - back-end
     - dev
@@ -125,7 +126,7 @@ def my_other_function(parameter=False):
     A multiline docstring.
 
     Keyword arguments:
-    parameter -- an example parameter (default False) 
+    parameter -- an example parameter (default False)
 
     """
 ```
@@ -145,17 +146,17 @@ Naming conventions
 ``` python
 class MyClass:
     """ A purely illustrative class """
-    
+
     __property = None
-    
+
     def __init__(self, property_value):
         self.__property = property_value
-    
+
     def get_property(self):
         """ A simple getter for "property" """
-        
+
         return self.__property
-    
+
     @classmethod
     def default(cls):
         instance = MyClass("default value")

@@ -2,6 +2,7 @@
 title: My piratebay mirror
 description: A link to my mirror of the PirateBay search engine, and a list of other such mirrors.
 layout: post
+image_url: https://d1s83tmo8l7caa.cloudfront.net/app/uploads/2015/06/19211804/pirate-bay.png
 tags:
   - dev
   - politics
@@ -39,4 +40,4 @@ see instructions of how to set it up from many of the existing mirrors:
 PirateBay Mirrors
 ===
 
-I also keep a list of [other Pirate Bay mirrors](/2013/07/22/list-mirror-sites-for-the-pirate-bay/). 
+I also keep a list of [other Pirate Bay mirrors](/2013/07/22/list-mirror-sites-for-the-pirate-bay/).

@@ -2,6 +2,7 @@
 title: A seachange in front-end best practice - but not for a while
 layout: post
 description: "With the advent of HTTP/2, many front-end performance best practices will change. But we should only switch over when the browser support is there."
+image_url: http://www.cyberdefensemagazine.com/wp-content/uploads/2016/04/HTTP2.jpg
 tags:
   - dev
   - front-end
@@ -46,7 +47,7 @@ This is all very exciting, but note that we can't and shouldn't start changing o
 But of course the main limiting factor will, as usual, be [browsers](http://en.wikipedia.org/wiki/HTTP/2#Browser_support):
 
 - Firefox leads the way, with support since version 36
-- Chrome has support for spdy4, but it isn't enabled by default yet 
+- Chrome has support for spdy4, but it isn't enabled by default yet
 - Internet Explorer 11 supports HTTP/2 only in Windows 10 beta
 
 As usual the main limiting factor will be waiting for [market share of older versions of Internet Explorer to drop off](http://www.theie9countdown.com/). Braver organisations may want to be progressive by deliberately slowing down the experience for people on older browsers to speed up the more up-to-date and hence push adoption of good technology.

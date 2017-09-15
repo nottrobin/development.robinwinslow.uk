@@ -2,6 +2,7 @@
 layout: post
 title: "Using Github's API to create repositories from the command-line"
 description: "Here's a unix command to create a GitHub repository from the command-line. You can even set it to be a git alias, for even more convenience."
+image_url: https://assets.ubuntu.com/v1/067e7336-github+api.png
 tags:
     - dev
     - back-end
@@ -13,7 +14,7 @@ tags:
 So I'm now getting into the habit of setting up a git repository for the smallest of tasks:
 
 ``` bash
-$ mkdir ~/projects/canvas-play && cd !#:1 # Make a new project directory 
+$ mkdir ~/projects/canvas-play && cd !#:1 # Make a new project directory
 $ sublime-text index.html # do some playing around with canvas
 $ git init # make a repository
 $ git add index.html # add my new canvas playing around

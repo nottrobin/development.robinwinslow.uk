@@ -2,10 +2,11 @@
 title: Note to self - technical aspirations
 description: A list of things I'd like to learn and achieve in technology.
 layout: post
+image_url: https://cdn.pixabay.com/photo/2015/05/25/23/00/technology-784046_1280.jpg
 tags:
   - dev
 ---
- 
+
 Things for me to learn and achieve.
 
 To learn:

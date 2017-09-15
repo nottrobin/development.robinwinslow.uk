@@ -2,6 +2,7 @@
 layout: post
 title: 'Why I love the internet'
 description: 'A little brain-dump about my passions and how it all adds up to absolutely loving the internet and everything it stands for'
+image_url: https://assets.ubuntu.com/v1/a70c4120-i+heart+internet.png
 tags:
     - dev
     - politics

@@ -2,6 +2,7 @@
 title: CSS best practice tips
 description: Some (slightly contentious) general rules for writing good CSS.
 layout: post
+image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png
 tags:
   - CSS
   - front-end

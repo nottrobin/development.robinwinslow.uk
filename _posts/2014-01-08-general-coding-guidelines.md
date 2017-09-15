@@ -2,6 +2,7 @@
 layout: post
 title: "Best-practice tips for programmers"
 description: "A bunch of useful tips for programming well (written in 2012)"
+image_url: https://www.podfeet.com/blog/wp-content/uploads/2016/09/PBS_Logo-1.png
 tags:
     - dev
     - back-end

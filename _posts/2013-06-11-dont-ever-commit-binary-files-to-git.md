@@ -2,6 +2,7 @@
 layout: post
 title: "Don't ever commit binary files to Git! Or what to do if you do."
 description: "Why you shouldn't commit binary files to a distributed version control system - and how you can remove them completely if you do."
+image_url: https://maxcdn.icons8.com/Share/icon/ios7/Files//binary_file1600.png
 tags:
     - dev
     - back-end

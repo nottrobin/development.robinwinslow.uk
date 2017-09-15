@@ -1,6 +1,7 @@
 ---
 title: "Django HTTP headers: Controlling caching on cn.ubuntu.com"
 description: "As optimising web performance becomes more and more important, it's becoming essential to carefully manage your caching headers. But Django doesn't make it hat easy."
+image_url: https://samueleresca.net/wp-content/uploads/2015/12/python-django-logo.jpg
 tags:
   - dev
 layout: post

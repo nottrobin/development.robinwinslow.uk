@@ -2,11 +2,12 @@
 title: Learning to scale SVG icons
 description: Some examples of how to mitigate issues with managing SVG icons in mark-up.
 layout: post
+image_url: https://upload.wikimedia.org/wikipedia/commons/8/83/Circle_scaling.svg
 tags:
   - dev
   - front-end
 ---
- 
+
 I had this idea to make my homepage actually just an index of all my online profiles - a link to Facebook, a link to Github, a link to this Tumblr blog etc. - Partly to comply with the [relMeAuth microformat](http://microformats.org/wiki/RelMeAuth).
 
 It seems to me a good way to do this would be to have really big icons. Everyone recognises the Facebook "F", or the Twitter bird. So I went in search of really big Icons.

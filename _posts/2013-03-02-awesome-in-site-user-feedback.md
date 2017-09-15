@@ -2,6 +2,7 @@
 title: 'An awesome in-site user feedback tool - with Github integration'
 description: 'How I discovered the Uservoice in-site feedback widget, and integrated it with Github Issues using Zapier'
 layout: post
+image_url: https://cdn.worldvectorlogo.com/logos/uservoice.svg
 tags:
     - dev
     - front-end

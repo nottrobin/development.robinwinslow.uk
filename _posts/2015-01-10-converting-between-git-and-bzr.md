@@ -2,6 +2,7 @@
 layout: post
 title: "Converting projects between Git and Bazaar"
 description: "In my team, we often work in both git and bzr version control systems. This is a little guide about managing both together."
+image_url: https://assets.ubuntu.com/v1/9b885339-bzr+to+git.png
 tags:
     - front-end
     - back-end

@@ -1,6 +1,7 @@
 ---
 title: Common Vagrant problems
 description: Some common issues that I've found with setting up Vagrant boxes
+image_url: http://plugins.netbeans.org/data/images/1380635555_nb-vagrant-thumb.png
 layout: post
 tags:
   - dev

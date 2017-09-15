@@ -2,6 +2,7 @@
 layout: post
 title: "How to use unix linkchecker to thoroughly check any site"
 description: "I just discovered the unix linkchecker tool. It's a very useful and thorough tool for checking websites that more people should use."
+image_url: https://assets.ubuntu.com/v1/3e3f1fcb-linkchecker+logo.png
 tags:
     - dev
     - back-end
@@ -103,7 +104,7 @@ I then saved these cookies in `cookies.txt` in a format that linkchecker will un
 Host:example.com
 Set-cookie: __utmc="111111111"
 Set-cookie: pysid="1e53e0a04bf8e953c9156ea841e41157"
-``` 
+```
 
 And included it in my `linkchecker` command with `--cookiefile`:
 

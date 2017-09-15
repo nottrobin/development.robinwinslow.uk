@@ -2,7 +2,8 @@
 layout: post
 title: "Writing expressive code"
 description: "Reading some legacy code today reminded me of some general principles that programmers could follow to make code easier to manage for future developers. I may have got a bit carried away..."
-tags: 
+image_url: http://torquemag-hhvm.s3.amazonaws.com/uploads/2012/12/codeispoetrywp.jpg
+tags:
   - dev
   - canonical
 published: true
@@ -99,14 +100,14 @@ In cases where a `switch` is used, or multiple `if .. else if` statements, you c
 class User {
     function deleteArticle($article) {
         $success = false;
-        
+
         if (
             user->permissionGroup == 'administrator'
             || user->permissionGroup == 'editor'
         ) {
             $success = $article->delete();
         }
-        
+
         return $success;
     }
 }
@@ -170,7 +171,7 @@ However, I don't think it's worthwhile being overly anal about code standards (m
 Delete commented out code
 ---
 
-If you're using a version control system (like [Git](http://git-scm.com/)) there really is no need to keep large blocks of commented-out or unused code. You should just delete it, to keep your codebase tidier. If you really need it again, you can just got and find it in the version control history. 
+If you're using a version control system (like [Git](http://git-scm.com/)) there really is no need to keep large blocks of commented-out or unused code. You should just delete it, to keep your codebase tidier. If you really need it again, you can just got and find it in the version control history.
 
 Trade-offs
 ===

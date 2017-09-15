@@ -2,12 +2,13 @@
 title: Some of my ideas for projects
 layout: post
 description: "I often have ideas for digital projects or organisations, and I really see no point keeping them secret, so I'm going to start trying to share them here."
+image_url: https://cdn.pixabay.com/photo/2013/02/15/06/52/exchange-of-ideas-81822_1280.jpg
 tags:
   - blogging
   - dev
   - politics
 ---
- 
+
 Ideas are cheap.
 
 Lots of people have ideas, but only a few of them are genuinely valuable. I don't believe in a strong link between intelligence and having good ideas - there's a lot of luck in there too.

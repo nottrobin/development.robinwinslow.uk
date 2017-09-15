@@ -2,6 +2,7 @@
 layout: post
 title: "Fix Docker's networking DNS config"
 description: "Within certain networks, docker is unable to resolve DNS correctly. When this happens, here's how to fix it."
+image_url: https://www.docker.com/sites/default/files/Whale%20Logo332_5.png
 tags:
     - back-end
     - dev

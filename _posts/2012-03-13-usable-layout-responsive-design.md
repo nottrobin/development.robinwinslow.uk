@@ -2,11 +2,12 @@
 title: Usable layout (responsive design)
 description: Some examples of responsive layouts
 layout: post
+image_url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Responsive_svg.svg
 tags:
   - front-end
   - dev
 ---
- 
+
 I originally wrote this post in June 2010 on my Wordpress blog. I like to think it was before the internet caught onto the idea of responsive design. I'm now re-posting it on Tumblr (My wordpress has been decommissioned).
 
 I was playing around with "usable layout" as I called it, the main features being:

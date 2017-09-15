@@ -2,6 +2,7 @@
 layout: post
 title: "Installing Symfony 2 by creating a github fork"
 description: "How to fork the Symfony 2 standard PHP project and install dependencies locally using Composer on Ubuntu"
+image_url: https://www.brainvire.com/wp-content/uploads/logo_symphony2_gl.png
 tags:
     - dev
     - back-end
@@ -57,7 +58,7 @@ Symfony also recommends that we set XDebug to allow a high nesting level:
 
 ``` bash
 # Add to PHP configuration      
-$ echo "xdebug.max_nesting_level=250" | sudo tee -a /etc/php5/mods-available/xdebug.ini 
+$ echo "xdebug.max_nesting_level=250" | sudo tee -a /etc/php5/mods-available/xdebug.ini
 ```
 
 And that MySQL is set to UTF-8 by default:
@@ -131,7 +132,7 @@ $ php ./app/check.php
 *  Symfony requirements check  *
 *                              *
 ********************************
-... 
+...
  OK       PHP version must be at least 5.3.3 (5.4.9-4ubuntu2 installed)
  OK       PHP version must not be 5.3.16 as Symfony won't work properly with it
  OK       Vendor libraries must be installed
@@ -159,4 +160,3 @@ $ php ./app/console server:run
 ```
 
 And then browse to [localhost:8000](http://localhost:8000/).
-
