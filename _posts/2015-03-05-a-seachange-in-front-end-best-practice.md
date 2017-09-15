@@ -11,8 +11,7 @@ tags:
 
 Despite [some reservations](https://queue.acm.org/detail.cfm?id=2716278), it looks like [HTTP/2](http://en.wikipedia.org/wiki/HTTP/2) is very definitely the future of the Internet.
 
-Speed improvements
-===
+## Speed improvements
 
 HTTP/2 may not be the perfect standard, but it will bring with it many long-awaited speed improvements to internet communication:
 
@@ -22,8 +21,7 @@ HTTP/2 may not be the perfect standard, but it will bring with it many long-awai
 - Keep connections alive
 - Bi-directional communication
 
-Changes in long-held performance practices
-===
+## Changes in long-held performance practices
 
 I read [a very informative post](https://mattwilcox.net/web-development/http2-for-front-end-web-developers) today (via [Web Operations Weekly](http://webopsweekly.com/)) which laid out all the ways this will change some deeply embedded performance principles for front-end developers. Namely:
 
@@ -39,8 +37,7 @@ Importantly, Matt Wilcox points out that in an HTTP/2 world, these practices mig
 - If you serve concatenated CSS, Javascript or image files, it's likely you're sending more content than you strictly need to for each page
 - Serving assets from different domains prevents HTTP/2 from reusing existing connections, forcing it to open extra ones
 
-But not yet...
-===
+## But not yet...
 
 This is all very exciting, but note that we can't and shouldn't start changing our practices *yet*. Even [server-side support for HTTP/2](http://en.wikipedia.org/wiki/HTTP/2#HTTP.2FHTTPS_servers) is still patchy, with [nginx](http://nginx.org/) only promising full support by the end of 2015 (and Microsoft unusually leading the way).
 

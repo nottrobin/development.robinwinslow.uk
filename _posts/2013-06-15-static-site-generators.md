@@ -12,8 +12,7 @@ tags:
 
 Static site generators (like [Jekyll](http://jekyllrb.com/) and [Hyde](http://ringce.com/hyde)) offer a much simpler and more transparent way to create a website. There's a small learning curve, but it's totally worth it. Especially if you're a developer already.
 
-What is a static site generator?
-===
+## What is a static site generator?
 
 A piece of software that can read a set of files in a particular format and convert them into static files (e.g. HTML &c.) that can then be served directly as a website.
 
@@ -29,8 +28,7 @@ $ git add . && git commit -m 'new post: why i love the internet' # save it in ve
 $ git push heroku # release the change to my live site (I use heroku)
 ```
 
-Why bother?
-===
+## Why bother?
 
 Personally I think static sites make managing websites really fun.
 
@@ -42,8 +40,7 @@ For the right kind of project, static sites can make it so much simpler to manag
 - **easy to start** - Hardly have to write any code to get started.
 - **easy to maintain** - Tweaking your site is more transparent and direct - you can easily view and edit the static files directly.
 
-Which sites make sense?
-===
+## Which sites make sense?
 
 Any site that needs to do anything complex on the server-side work will *not* be appropriate. However, any site which is basically just **a collection of static information** - like a **blog**, a **brochure site**, or even a **news or magazine site** - could work as a static site.
 
@@ -53,8 +50,7 @@ This needn't necessarily exclude anyone. Many static site generators use [Markdo
 
 In any case, if the only people who edit the site directly are developers then using a static site generator should come absolutely naturally.
 
-How?
-===
+## How?
 
 There are many static site generators out there written in many different languages:
 

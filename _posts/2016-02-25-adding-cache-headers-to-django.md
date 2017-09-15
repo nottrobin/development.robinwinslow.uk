@@ -20,8 +20,7 @@ For our [China site](http://cn.ubuntu.com), we've decided that the HTML pages
 should be cached for 5 minutes, and the CSS and JavaScript can be cached for a
 year - as every time we update them we [change the URL][].
 
-Caching headers in Django
-===
+## Caching headers in Django
 
 Telling the browser how long to cache a resource is done with one of two headers:
 

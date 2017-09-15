@@ -20,13 +20,11 @@ However, as I'm a developer, I'm used to using github, and I don't need the code
 
 The danger of forking the actual repository is that it might not be stable. There could be unfixed bugs that aren't in the official releases. The advantage is that it's particularly easy to pull in new changes from the Symfony repository.
 
-The environment
-===
+## The environment
 
 I'm doing all this on [Ubuntu](http://www.ubuntu.com/) Raring Ringtail (13.04). This post will almost certainly work in a similar way for any modern debian-based OS, but it will be fairly useless for yum-based OSes, and completely useless for Windows.
 
-Install packages
-===
+## Install packages
 
 Before we start, you'll need a [github](https://github.com/) account, and you'll need to install [git](http://git-scm.com/), [MySQL](http://www.mysql.com/), [php5-cli](https://launchpad.net/ubuntu/raring/+package/php5-cli), [php5-dev](https://launchpad.net/ubuntu/raring/+package/php5-dev), [php5-mysql](https://launchpad.net/ubuntu/raring/+package/php5-mysql), [php5-intl](https://launchpad.net/ubuntu/raring/+package/php5-intl) and [php-apc](https://launchpad.net/ubuntu/raring/+package/php-apc) on your local computer:
 
@@ -35,8 +33,7 @@ Before we start, you'll need a [github](https://github.com/) account, and you'll
 $ sudo apt-get install git php5-cli php5-dev mysql-server php5-mysql php5-intl php-apc
 ```
 
-Configuration tweaks
-===
+## Configuration tweaks
 
 We must make sure that `date.timezone` is set to a [valid timezone](http://www.php.net/manual/en/timezones.europe.php). Symfony recommends that we set `short_open_tag` to `Off`, so we might as well change that at the same time:
 
@@ -73,8 +70,7 @@ collation-server = utf8_general_ci
 character-set-server = utf8
 ```
 
-Fork the repository
-===
+## Fork the repository
 
 [Forking a github repository](https://help.github.com/articles/fork-a-repo) is as easy as navigating to the [repository page](https://github.com/nottrobin/symfony-standard) and clicking the "fork" button. Note down the URL for your repository and clone it and change to the directory, e.g.:
 
@@ -83,8 +79,7 @@ $ git clone git@github.com:<yourusername>/symfony-standard.git
 $ cd symfony-standard
 ```
 
-Install dependencies and configure
-===
+## Install dependencies and configure
 
 Now you'll need `composer` to install dependencies:
 
@@ -117,8 +112,7 @@ $ git add composer.lock
 $ git commit -m 'Add composer.lock: dependency versions'
 ```
 
-Check everything works
-===
+## Check everything works
 
 Now hopefully if you run the check, you'll see a long list of "OK"s:
 
@@ -141,8 +135,7 @@ $ php ./app/check.php
 
 If you get `error`s you must fix them. If you get `warning`s feel free to ignore them.
 
-Create the database
----
+### Create the database
 
 You can now, if you want, use Doctrine to create the database:
 
@@ -150,8 +143,7 @@ You can now, if you want, use Doctrine to create the database:
 php app/console doctrine:database:create
 ```
 
-Run the PHP server
----
+### Run the PHP server
 
 If the PHP version listed in the output of `check.php` is at least `5.4` (see above, mine is `5.4.9-4ubuntu2`) then you can run the PHP server. [You can update](http://askubuntu.com/questions/109404/how-do-i-install-latest-php-in-supported-ubuntu-versions-like-5-4-x-in-ubuntu-1) to `5.4` if you don't have it already.
 

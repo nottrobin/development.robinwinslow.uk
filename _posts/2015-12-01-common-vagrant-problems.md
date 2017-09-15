@@ -15,7 +15,7 @@ Vagrant seems like a great idea - just checkout a project, type "vagrant up", an
 
 In practice, managing Vagrant environments requires a fairly significant learning curve.
 
-## Multiple technologies
+### Multiple technologies
 
 First you should realised that Vagrant itself actually does very little of the leg-work. It brings together a number of technologies:
 
@@ -25,9 +25,9 @@ First you should realised that Vagrant itself actually does very little of the l
 
 Therefore to be able to debug Vagrant environments it is very useful to know as much as possible about each of these.
 
-## VirtualBox issues
+### VirtualBox issues
 
-### VT-x not available
+#### VT-x not available
 
 When you try to start up the box, you may get the error:
 
@@ -44,9 +44,9 @@ VT-x/AMD-V hardware acceleration has been enabled, but is not operational.
 To fix this you need to [reboot into the BIOS settings](http://www.betaarchive.com/forum/viewtopic.php?t=22067) and enable VT-x.
 Unfortunately as computer BIOSes vary immensely, I can't help you out with where to find the setting.
 
-## Chef server issues
+### Chef server issues
 
-### Client node name exists
+#### Client node name exists
 
 ```
 Client node name already exists (UPDATE THIS TO THE REAL ERROR MESSAGE)
@@ -60,7 +60,7 @@ chef.node_name = "#{ENV['USER']}-new-key-26"
 
 or delete existing key from the server (probably hosted at [opscode](manage.opscode.com/clients)).
 
-### 401 Unauthorized
+#### 401 Unauthorized
 
 You may get this error when Chef is trying to install a new piece of software or something similar.
 

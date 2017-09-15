@@ -16,8 +16,7 @@ On release day we can get up to 8,000 requests a second to [ubuntu.com](http://u
 
 Ubuntu.com has been running on [Drupal](https://www.drupal.org/), but we've been gradually migrating it to a more bespoke [Django](https://www.djangoproject.com/) based system. In March we started work on migrating the download section in time for the release of [Trusty Tahr](http://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_.28Trusty_Tahr.29). This was a prime opportunity to look for ways to reduce some of the load on the servers.
 
-Choosing [geolocated](http://en.wikipedia.org/wiki/Geolocation) download mirrors is hard work for an application
----
+### Choosing [geolocated](http://en.wikipedia.org/wiki/Geolocation) download mirrors is hard work for an application
 
 When someone downloads Ubuntu from ubuntu.com (on [a thank-you page](http://www.ubuntu.com/download/desktop/thank-you?version=14.04.1&architecture=amd64)), they are actually sent to one of the [300 or so mirror sites](https://launchpad.net/ubuntu/+cdmirrors) that's [nearby](http://en.wikipedia.org/wiki/Geolocation).
 
@@ -31,8 +30,7 @@ This process is by far the most intensive operation on the whole site, not becau
 
 For the site to be able to handle this load, we'd need to [load-balance](https://en.wikipedia.org/wiki/Load_balancing_(computing)) requests across perhaps 40 [VMs](https://en.wikipedia.org/wiki/Virtual_machine).
 
-Can everything be done client-side?
----
+### Can everything be done client-side?
 
 Our first thought was to embed the entire mirror list in the [thank-you page](http://ubuntu.com/download/desktop/thank-you) and use [JavaScript](http://en.wikipedia.org/wiki/Javascript) in the users' browsers to select an appropriate mirror. This would drastically reduce the load on the application, because the download page would then be effectively [static](http://en.wikipedia.org/wiki/Static_web_page) and cache-able like every other page.
 
@@ -40,8 +38,7 @@ The only way to reliably get the user's location [client-side](http://en.wikiped
 
 This solution would inconvenience users just a bit too much. So we found a trade-off:
 
-A mixed solution - Apache geolocation
----
+### A mixed solution - Apache geolocation
 
 [mod_geoip2](http://dev.maxmind.com/geoip/legacy/mod_geoip2/) for Apache can apply server rules based on a user's location and is much faster than doing geolocation at the application level. This means that we can use Apache to send users to a country-specific version of the download page (e.g. [the German desktop thank-you page](http://www.ubuntu.com/download/desktop/thank-you?country=DE&version=12.04.4&architecture=amd64)) by adding `&country=GB` to the end of the URL.
 

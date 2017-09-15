@@ -21,8 +21,7 @@ Code is poetry
 
 Writing expressive code may help future coders to understand what's going on. It may even help you in the future. But it may also help you simply to understand the problem. Thinking carefully about how to define and encapsulate the components of your solution will often help you to understand the problem better, leading to a more logical solution.
 
-"Self-documenting code"
-===
+## "Self-documenting code"
 
 ["Self-documenting code"](http://en.wikipedia.org/wiki/Self-documenting_code) is about structuring your code and choosing your method and variable names so that your code will be largely self-describing. This is a great practice, and can make some comments redundant:
 
@@ -34,21 +33,18 @@ if ($user->isAuthenticated()) { ... } // If the user is authenticated...
 
 However, as a recent discussion with [a friend of mine](http://twitter.com/karlwilliams) highlighted to me, expressive code is not a *replacement* for comments - no code is *entirely* "self-documenting". Always write as expresively as you can, but *also* always document where it makes sense. Methods, functions and classes should always be summarised with a comment - as mentioned in the [Python coding conventions](/2014/01/05/summary-of-python-code-style-conventions/#toc_3).
 
-Wording
-===
+## Wording
 
 It's worth thinking carefully about how you name your variables and methods.
 
-Don't abbreviate
----
+### Don't abbreviate
 
 ``` javascript
 var uid = 10; // I am unlikely to know what uid stands for without context
 var userIdentifier = 10; // Better
 ```
 
-Be specific
----
+### Be specific
 
 Use as concrete and specific nouns as you can to describe methods and functions:
 
@@ -57,8 +53,7 @@ var event; // bad - generic
 var newsLinkClickEvent; // good - specific
 ```
 
-Encapsulation
-===
+## Encapsulation
 
 No-one likes to read a really long procedural program. It's very difficult to follow. It's much easier to read a shorter set of well-encapsulated method calls. If you need to delve deeper, simply look in the relevant method:
 
@@ -73,8 +68,7 @@ function saveUserDetails(userStore, userDetails) {
 }
 ```
 
-Do you need an `else`?
----
+### Do you need an `else`?
 
 The use of many `if .. else` conditionals make programs confusing. In many cases, the `else` part can be encapsulated in a separate method or function call, making the program easier to read:
 
@@ -128,8 +122,7 @@ class Administrator implements User { use ArticleDeletion; }
 
 Notice that I've deliberately opted *not* to make `Administrator` inherit from `Editor`, but instead compose them separately. This keeps my structure more flat and flexible. This is an example of [composition over inheritence](http://en.wikipedia.org/wiki/Composition_over_inheritance).
 
-Depth
-===
+## Depth
 
 While encapsulation is often a good thing, to make programs easier to understand at the higher level, it's important to preserve the [single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle) by not encapsulating [separate concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) together.
 
@@ -159,8 +152,7 @@ database.Save(user);
 
 This is more lines, but it is nonetheless clearer what is actually happening, and it's more versatile.
 
-Tidiness
-===
+## Tidiness
 
 Always try to format your code so that it is easily readable. Don't be afraid of white space, and use indentation sensibly to highlight the structure of your code.
 
@@ -168,29 +160,25 @@ Where there is an accepted code style guide, you should try to follow it. For ex
 
 However, I don't think it's worthwhile being overly anal about code standards (my thinking has evolved on this somewhat) because you'll never be able to get everybody to code exactly the same way. So if (like me) you're a coder who feels the need to reformat code whenever you see it to make it fit in with anal standards, you could probably so with training yourself out of that habit. As long as you can read it, leave it be.
 
-Delete commented out code
----
+### Delete commented out code
 
 If you're using a version control system (like [Git](http://git-scm.com/)) there really is no need to keep large blocks of commented-out or unused code. You should just delete it, to keep your codebase tidier. If you really need it again, you can just got and find it in the version control history.
 
-Trade-offs
-===
+## Trade-offs
 
 There will always be a trade-off between expresiveness and succinctness.
 
-Depth vs. encapsulation
----
+### Depth vs. encapsulation
 
 It is desirible to keep as flat a structure as possible in your objects, so that programmers don't have to delve through parent class after parent class to find the relevant bit of code. But it is also important to keep code encapsulated in logical units.
 
 Both the goals are often achievable by doing [composition over inheritence](http://en.wikipedia.org/wiki/Composition_over_inheritance) using [dependency injection](http://en.wikipedia.org/wiki/Dependency_injection) or traits / multiple inheritence.
 
-Special syntax
----
+### Special syntax
 
 In many languages there are often slightly obscure constructs that can nonetheless save time. With many of these there is a readability vs. simplicity trade-off.
 
-### Ternary operators and null coalescing
+#### Ternary operators and null coalescing
 
 Both C# and PHP have null coalescing operators:
 
@@ -207,7 +195,7 @@ var userType = user.Type != null ? user.Type : defaultType;
 
 Both of these constructs are much more succinct than a full `if .. else` construct, but they are less semantically clear, hence the trade-off. Personally, I think it's fine to use the ternary operator in simple conditionals like this, but if it gets any more complicated then you should always use a full `if .. else` statement.
 
-### Plugins / libraries
+#### Plugins / libraries
 
 For example, in C#:
 
@@ -237,8 +225,7 @@ The latter is clearly simpler, and hopefully not too difficult to understand, bu
 
 I think that in this case the Linq solution is so much simpler and quite expressive enough that it should definitely be preferred - and hopefully if another developer doesn't know about Linq, it will be quite easy for them to pick up, and will expand their knowledge.
 
-Single-use variables
----
+### Single-use variables
 
 While the following variable is pointless:
 

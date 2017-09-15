@@ -17,7 +17,7 @@ I already wrote about [the keynotes][f3697c15], which were more abstract. Here
 I'm going to talk about the other talks I saw, which were generally more
 technical or at least had more to do with Python.
 
-# Summary
+## Summary
 
 The talks I saw covered a whole range of topics - from testing through
 documentation and ways to achieve simplicity to leadership. Here are some key
@@ -32,14 +32,14 @@ take-aways:
 - [FIDO's U2F and UAF standards][24c62219] are just starting to gain support - keep an eye on them
 - Python [has some good tools][145bb3cd] for managing data
 
-# The talks
+## The talks
 
 Following are slightly more in-depth summaries of the talks I thought
 were interesting.
 
-## Friday
+### Friday
 
-### 15:30: [Leadership of Technical Teams][254ea0dd] - Owen Campbell
+#### 15:30: [Leadership of Technical Teams][254ea0dd] - Owen Campbell
 
 There were two key points I took away from this talk. The first was Owen's
 suggestion that leaders should take every opportunity to practice leading.
@@ -64,7 +64,7 @@ you slide up and down the knowledge scale on a minute-to-minute basis sometimes,
 so you have to learn to be authoritative one moment and then permissive the
 next, as appropriate.
 
-### 17:00: [Document all the things][35097b5d] - Kristian Glass
+#### 17:00: [Document all the things][35097b5d] - Kristian Glass
 
 Kristian spoke about the importance, and difficulty, of good documentation.
 Here are some particular points he made:
@@ -85,9 +85,9 @@ but I was also wondering if a StackOverflow model might work, where users
 submit questions, and the team treat them like bugs - need to stay on top of
 answering them. This answer base would then become the documentation.
 
-## Saturday
+### Saturday
 
-### 11:00: [Asking About Gender - the Whats, Whys and Hows][0d841cba] - Claire Gowler
+#### 11:00: [Asking About Gender - the Whats, Whys and Hows][0d841cba] - Claire Gowler
 
 Claire spoke about how so many online forms expect people to be either
 simply "male" or "female", when the truth can be much more complicated.
@@ -103,7 +103,7 @@ apps try to do much more than they need to, and ask for much more information
 than they need. Thinking about how little you know about your user can help
 you realise what you actually don't need to know about your user.
 
-### 11:30: [Finding more bugs with less work][88b14d3d] - David R. MacIver
+#### 11:30: [Finding more bugs with less work][88b14d3d] - David R. MacIver
 
 David MacIver is the author of the [Hypothesis testing library][7b8a0da3].
 
@@ -132,9 +132,9 @@ def test_average(float_list):
 There are many cases where Hypothesis won't be much use, but it's certainly
 good to have in your toolkit.
 
-## Sunday
+### Sunday
 
-### 10:00: [Simplicity Is A Feature][1fb0f649] - Cory Benfield
+#### 10:00: [Simplicity Is A Feature][1fb0f649] - Cory Benfield
 
 Cory presented simplicity as the opposite of complexity - that is, the fewer
 options something gives you, the more simple and straightforward it is.
@@ -165,7 +165,7 @@ is as simple as possible. He suggested that 3 layers is a good number:
 He also mentioned that he likes [README driven development][8b933d99], which seems like
 is an interesting approach.
 
-### 11:00: [How (not) to argue - a recipe for more productive tech conversations][303ec758] - Harry Percival
+#### 11:00: [How (not) to argue - a recipe for more productive tech conversations][303ec758] - Harry Percival
 
 I think this one could be particularly useful for me.
 
@@ -189,7 +189,7 @@ All of this comes down to stepping back, waiting and exercising humility. All
 of which are easier said than done, but all of which are very valuable if I
 could only manage it.
 
-### 11:30: [FIDO - The dog ate my password][87848f51] - Alex Willmer
+#### 11:30: [FIDO - The dog ate my password][87848f51] - Alex Willmer
 
 After covering fairly common ground of how and why passwords suck, Alex
 introduced the [FIDO alliance][b0d55eaa].
@@ -204,7 +204,7 @@ authentication to try to replace passwords:
 Browsers are [just starting to support U2F][3fe25e7b], whereas support for
 UAF is farther off. Keep an eye out.
 
-### 14:30: [Data Visualisation with Python and Javascript - crafting a data-visualisation for the web][cce07936] - Kyran Dale
+#### 14:30: [Data Visualisation with Python and Javascript - crafting a data-visualisation for the web][cce07936] - Kyran Dale
 
 Kyran demoed using Scrapy and Pandas to retrieve the Nobel laureatte data from
 Wikipedia, using Flask to serve it as a RESTful API, and then using D3 to create

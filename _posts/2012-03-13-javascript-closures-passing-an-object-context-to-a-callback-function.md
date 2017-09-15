@@ -11,11 +11,9 @@ tags:
 
 This is the first really useful application for [JavaScript closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures) that I've found.
 
-<a id="problem"></a>
-The problem
-===
+## The problem
 
-(You can [skip straight to the solution](#solution) if you want).
+(You can [skip straight to the solution](#the-solution) if you want).
 
 There are many situations when you might use a callback function. For example, to be run after an [XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest) (or AJAX call), or on adding an [event listener](https://developer.mozilla.org/en/DOM/element.addEventListener).
 
@@ -52,9 +50,7 @@ This outputs the following in my Chrome 11 console:
 
 This is because the global variable "globalString" is initially set to "hello", but it gets immediately overridden with "world" when the second instance of the object is called. Therefore, by the time the callbacks fire (a second after the page loads) the variable is "world", so they both return "world". This could very well be a problem.
 
-<a id="solution"></a>
-The solution
-===
+## The solution
 
 The solution is to set the context (i.e. 'this') of the callback function `this.callback` to be the current object instance, so that the function will inherently have access to all the object's properties.
 

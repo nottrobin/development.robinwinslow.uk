@@ -31,8 +31,7 @@ Of the various [software development methodologies](http://en.wikipedia.org/wiki
 
 [Lean software development](http://en.wikipedia.org/wiki/Lean_software_development) is also rapidly gaining support within the agile community.
 
-Agile practices and principles
-===
+## Agile practices and principles
 
 Without choosing to follow any one defined methodology for project management, here are some common practices that could be adopted by an agile team:
 

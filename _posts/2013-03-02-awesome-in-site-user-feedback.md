@@ -20,8 +20,7 @@ So we need to be constantly offering users the opportunity to tell us what they 
 but also not annoy users by bugging them all the time,
 and somehow try to avoid getting 50 of the same issue being submitted.
 
-Well done Uservoice
-===
+## Well done Uservoice
 
 I think Uservoice got this exactly right.
 You get a subtle link appear on the side of the site saying one word - "feedback".
@@ -35,8 +34,7 @@ The feedback link is totally customisable, and easy to include in your site with
 I use the service on this very site (look to the right).
 Please click it to see Uservoice in action and please leave me some feedback :).
 
-The missing link - Github Issues integration
-===
+## The missing link - Github Issues integration
 
 Immediately I thought "where will these suggestions be stored?"
 because I was already managing [my own list of ideas](https://github.com/nottrobin/robinwinslow.uk/issues) in
@@ -49,8 +47,7 @@ to Uservoice, but it turns out there's already a slick [solution with Zapier](ht
 [Zapier](https://zapier.com/) is an integration service - for linking various different APIs.
 And they already have built-in support for linking Uservoice to Github Issues.
 
-But how much does it cost?
-===
+## But how much does it cost?
 
 For this website I certainly can't afford to pay for either service.
 So it's a good thing that both [Zapier](https://zapier.com/app/settings/plans) and [Uservoice](https://www.uservoice.com/plans/)

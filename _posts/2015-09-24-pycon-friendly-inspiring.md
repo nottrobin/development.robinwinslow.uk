@@ -35,7 +35,7 @@ impressive for such a large event with more than 450 people.
 Unfortunately, the Monday sprint day was cut short by the discovery of an
 [unexploded bomb][500907c3].
 
-# Many keynotes, without much Python
+## Many keynotes, without much Python
 
 There were a lot of "keynote" talks, with 2 on Friday, and one each on
 Saturday and Sunday. And interestingly none of them were really about Python,
@@ -48,7 +48,7 @@ And I think it was a good decision to have more abstract keynotes. It shows that
 the Python community really is more of a general community than just a special
 interest group.
 
-## Van Lindberg on data economics, Marx and the Internet of Things
+### Van Lindberg on data economics, Marx and the Internet of Things
 
 In [the opening keynote][1b264317] on Friday morning, the [PSF][3ac3cacb]
 chairman showed that total computing power
@@ -81,7 +81,7 @@ portable devices, processing efficiency becomes important once again. Van
 low-powered devices, like [MicroPython][e97dbb7c], will be essential for Python
 as a language to survive.
 
-## Daniele Procida: All I really want is power
+### Daniele Procida: All I really want is power
 
 The [second keynote][bfaf6e80] was just after lunch on Friday,
 [Daniele Procida][f81da4dc], organiser of [DjangoCon Europe][0e123baa] openly
@@ -116,7 +116,7 @@ power in the open source community is inevitable or necessarily comes naturally,
 but at least in the open source community sharing power genuinely can help you
 gain respect, where I fear the same isn't so true of politics or industry.
 
-## Dr Simon Sheridan: Landing on a comet: From planning to reality
+### Dr Simon Sheridan: Landing on a comet: From planning to reality
 
 Simon Sheridan was an incredibly most humble and unassuming man, given his
 towering achievements. He is a world-class space scientist who was part of the
@@ -125,7 +125,7 @@ European Space Agency team who helped to land [Rosetta][8af8bc3a] on comet 67P.
 Most of what he mentioned was basically covered in [the news][f101f1bd], but it
 was wonderful to hear it from his perspective.
 
-## Naomi Ceder: Confessions of a True Impostor
+### Naomi Ceder: Confessions of a True Impostor
 
 When, a short way into [her Sunday morning keynote][9c9e9a3e],
 Naomi Ceder [asked the room][92ee7b0b]:
@@ -179,7 +179,7 @@ express our principles and passion for open source, the more we express our
 values, the easier it is to counter negative feelings, to be welcoming,
 to stop feeling like impostors.
 
-# A great conference
+## A great conference
 
 Overall, the conference was exhausting, but I'm very grateful that I got to
 attend. It was inspiring and informative, and a great example of how to

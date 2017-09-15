@@ -13,13 +13,11 @@ If you glance up to the address bar, you will see that this post is being served
 
 I've done this *completely for free*. Here's how:
 
-Get a free certificate
-===
+## Get a free certificate
 
 [StartSSL](http://www.startssl.com/) isn't the nicest website in the world to use. However, they will give you a free certificate without too much hassle. Click "Sign up" and follow the instructions.
 
-Get an OpenShift Bronze account
-===
+## Get an OpenShift Bronze account
 
 Sign up to a [RedHat OpenShift Bronze account](https://www.openshift.com/products/pricing). Although this account is free to use, as long as you only use one 1-3 gears, it does require you to provide card details.
 
@@ -29,8 +27,7 @@ Once you have an account, create a new application. On the application screen, [
 
 Edit your selected domain name and upload the certificate, chain file and private key. *NB: Make sure you upload the chain file*. If the chain file isn't uploaded initially it may not register later on.
 
-Pushing your site
-===
+## Pushing your site
 
 Now you can [push](https://www.openshift.com/developers/deploying-and-building-applications) any website to the created application and it should be securely hosted.
 

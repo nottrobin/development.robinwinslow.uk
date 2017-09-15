@@ -16,8 +16,7 @@ This is not quite an exhaustive summary: I have omitted the really obvious stuff
 
 These standards can hopefully help in every coders' ongoing mission to write [readable and expressive code](/2013/11/22/expressive-coding/).
 
-Indentation, line-length & code wrapping
-===
+## Indentation, line-length & code wrapping
 
 - Always use *4 spaces* for indentation (don't use tabs)
 - Write in ASCII in Python 2 and UTF-8 in Python 3
@@ -39,8 +38,7 @@ result = some_function_that_takes_arguments(
 result2 = some_function_that_takes_arguments('argument one', 'argument two', 'argument three')
 ```
 
-Imports
-===
+## Imports
 
 - Don't use wildcards
 - Try to use absolute imports over relative ones
@@ -61,8 +59,7 @@ import sibling # local module without "."
 from mypkg import * # wildcards
 ```
 
-Whitespace and newlines
-===
+## Whitespace and newlines
 
 - 2 blank lines before top-level function and class definitions
 - 1 blank line before class method definitions
@@ -102,8 +99,7 @@ def complex(real, imag = 0.0):
     return magic(r = real, i = imag) # Spaces in default values
 ```
 
-Comments
-===
+## Comments
 
 - Keep comments up to date - incorrect comments are worse than no comments
 - Write in whole sentences
@@ -131,8 +127,7 @@ def my_other_function(parameter=False):
     """
 ```
 
-Naming conventions
-===
+## Naming conventions
 
 - Class names in `CapWords`
 - Method, function and variables names in `lowercase_with_underscores`

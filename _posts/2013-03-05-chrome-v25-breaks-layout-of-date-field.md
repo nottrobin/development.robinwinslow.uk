@@ -18,8 +18,7 @@ Now the `date` type defaults to `display: -webkit-inline-flex`, and (this is the
 
 ([try it yourself](http://jsfiddle.net/nottrobin/zjHbv/2/))
 
-Why is this bad?
-===
+## Why is this bad?
 
 We use the date type on [arena blinds](http://arena-blinds.com),
 and to have more control over the layout of the input fields, they are all set to `display: block`.
@@ -31,8 +30,7 @@ So one day we realised our date fields looked broken in Chrome, and it was becau
 
 And that's entirely fair reasoning.
 
-Cognitive dissonance
-===
+## Cognitive dissonance
 
 My boss's perfectly reasonable conclusion goes against everything progressive that I've been trying to instil in my team.
 

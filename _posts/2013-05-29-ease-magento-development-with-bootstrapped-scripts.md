@@ -13,8 +13,7 @@ If you work in Magento a lot, you'll come to many many points when you need to m
 
 This could help you inspect the raw data stored against the models (Magento's database structure is [hideously complex](http://www.magentocommerce.com/wiki/2_-_magento_concepts_and_architecture/magento_database_diagram)), or it could be because you need to edit existing models or create new ones.
 
-The bootstrap script
-===
+## The bootstrap script
 
 I suggest you create the bootstrap as its own script so you can include it in all your little scripts:
 
@@ -55,8 +54,7 @@ ini_set('display_errors', 1);
 
 Once you've done this, you can use the `Mage` static to [do whatever you like](http://www.magentocommerce.com/knowledge-base/entry/magento-for-dev-part-1-introduction-to-magento).
 
-A use-case
-===
+## A use-case
 
 Here's a simple example that just retrieves the child IDs of the default category.
 

@@ -9,8 +9,7 @@ tags:
 
 Things for me to learn and achieve.
 
-To learn:
-===
+## To learn:
 
  - Chef Solo & Server
  - VeeWee...?
@@ -21,8 +20,7 @@ To learn:
  - Dell Cloud Launcher & Profile Tool (https://github.com/sputnik)
  - Behat and related technologies
 
-To achieve:
-===
+## To achieve:
 
  - Create Jekyll blog
  - Get Pygments working in Windows (blog about it?)

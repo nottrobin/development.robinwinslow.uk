@@ -14,8 +14,7 @@ Its real strength is that the Vagrant configuration files can be easily committe
 
 If you want you can [skip to the solution](#the-solution).
 
-The problem
-===
+## The problem
 
 The Vagrant website doesn't give you very much detail about how to install it. There is a [download page](http://downloads.vagrantup.com/tags/v1.0.3) with a list of packages for different systems, but when I tried to install this package on CentOS it gave me some sort of Ruby related error (I have zero experience with Ruby).
 
@@ -28,8 +27,7 @@ $ /opt/vagrant/bin/vagrant
 
 I [asked the internet](https://www.google.co.uk/search?sugexp=chrome,mod=9&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=install+vagrant+on+centos) how to install Vagrant on CentOS but it wasn't very helpful. Eventually I found a blog post on [how to setup Vagrant on Ubuntu](http://www.dejonghenico.be/blog/detail/setup-vagrant-and-a-small-quick-start) which gave me my answer, so I thought I'd share it with you.
 
-The solution
-===
+## The solution
 
 You need to install Vagrant through Ruby Gems. Thankfully it really is pretty simple:
 

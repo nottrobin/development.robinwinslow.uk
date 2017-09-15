@@ -25,7 +25,7 @@ If this sounds at all familiar to you, **I now have a solution**! (Although
 it didn't save me in this case because it needs to be enabled first - see
 below.)
 
-# oom_kill
+## oom_kill
 
 The [magic SysRq key][95cedafa] can run a bunch of kernel-level commands.
 One of these commands is called `oom_kill`. OOM stands for "Out of memory",

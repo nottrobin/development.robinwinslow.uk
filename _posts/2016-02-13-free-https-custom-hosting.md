@@ -24,8 +24,7 @@ or you need an SHA-1 fallback certificate (explained below)
 then look at my other post about [the OpenShift solution][free-https]. However,
 if a static site works for you, read on.
 
-GitHub Pages
-===
+## GitHub Pages
 
 As most developers will be aware by now, GitHub offer a fantastic free
 static website hosting solution in [GitHub Pages][].
@@ -59,8 +58,7 @@ The only thing you can't do directly with GitHub Pages is offer HTTPS
 on your custom domain - e.g. `https://mytestwebsite.robinwinslow.uk`. This is where
 CloudFlare comes in.
 
-CloudFlare
-===
+## CloudFlare
 
 CloudFlare offer a really quite impressive free DNS and CDN service. This free
 service includes some really impressive offerings, the first three of which
@@ -82,8 +80,7 @@ of global citizens won't be able to access your site without upgrading their
 browser. If this is important to you, either find a different HTTPS solution or
 upgrade to a [paid CloudFlare account][cloudflare-plans].
 
-Setting up HTTPS
----
+### Setting up HTTPS
 
 Because CloudFlare are a CDN *and* a DNS host, they can do the HTTPS negotiation
 for you. They've taken advantage of this to provide you with a free HTTPS
@@ -108,15 +105,13 @@ GitHub Pages completely for free!
 
 ![mytestwebsite with a secure domain](http://i.imgur.com/eBgFJqp.png)
 
-Ensuring all visitors use HTTPS
-===
+## Ensuring all visitors use HTTPS
 
 To make our site properly secure, we need to ensure all users are sent
 to the HTTPS site (`https://mytestwebsite.robinwinslow.uk`) instead of the HTTP
 one (`http://mytestwebsite.robinwinslow.uk`).
 
-Setting up a page rule
----
+### Setting up a page rule
 
 The first step to get visitors to use HTTPS is to send a [301 redirect][]
 from `http://mytestwebsite.robinwinslow.uk` to `https://mytestwebsite.robinwinslow.uk`.
@@ -139,8 +134,7 @@ HTTP/1.1 301 Moved Permanently
 Location: https://mytestwebsite.robinwinslow.uk/
 ```
 
-HTTP Strict Transport Security (HSTS)
----
+### HTTP Strict Transport Security (HSTS)
 
 To protect our users from [man-in-the-middle attacks][mitm], we should also
 turn on [HSTS with CloudFlare][] (still for free). Note that this can cause
@@ -166,8 +160,7 @@ It can take several weeks for your domain to make it into the
 again, by visiting `chrome://net-internals/#hsts` in a Chrome or Chromium
 browser and looking for the `static_sts_domain` setting.
 
-That's it!
-===
+## That's it!
 
 You now have an incredibly quick and easy way to put a fully secure website
 online in minutes, totally for free!

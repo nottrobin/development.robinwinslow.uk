@@ -20,8 +20,7 @@ There are a [plethora](http://www.smashingmagazine.com/2011/11/03/%E2%80%9Cbut-t
 [articles](http://www.rickwhittington.com/blog/should-my-website-support-internet-explorer-7/) out
 [there](http://j.eremy.net/are-you-still-supporting-ie7/) imploring people to drop support for Internet Explorer.
 
-IE8 usage
-===
+## IE8 usage
 
 According the [theie8countdown.com](http://theie8countdown.com/), global usage is at 24%. On this blog, it's at 1.5%,
 and on my company's website, [Arena Blinds](http://www.arena-blinds.com), (used by much less tech-savvy people) it's at 15%.
@@ -29,8 +28,7 @@ and on my company's website, [Arena Blinds](http://www.arena-blinds.com), (used 
 So if you were bold (like this site), you could probably drop support completely and effect less than 1/5 of your visitors.
 And those visitors would quickly upgrade their browsers.
 
-Advantages
-===
+## Advantages
 
 Dropping comes with significant advantages:
 

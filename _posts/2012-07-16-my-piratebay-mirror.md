@@ -8,13 +8,11 @@ tags:
   - politics
 ---
 
-Update (2013-07-29)
-===
+## Update (2013-07-29)
 
 My mirror isn't working at the moment. I'll fix it when I get a chance.
 
-Original post
-===
+## Original post
 
 I tried to visit thepiratebay to download a torrent just now but I was
 greeted with an extremely amateur looking "Error - site blocked" page.
@@ -37,7 +35,6 @@ easily [download the code](http://unblockedpiratebay.com/external/) yourself. [E
 Obviously I am not the first to do this. You can download the code and
 see instructions of how to set it up from many of the existing mirrors:
 
-PirateBay Mirrors
-===
+## PirateBay Mirrors
 
 I also keep a list of [other Pirate Bay mirrors](/2013/07/22/list-mirror-sites-for-the-pirate-bay/).

@@ -17,20 +17,17 @@ So whenever anyone has an idea, they should share it to get feedback. That way t
 
 To this end, I'm going to try to share my stupid little ideas on this page.
 
-Project idea sharing website
-===
+## Project idea sharing website
 
 Some people protect their ideas jealously, thinking "why would I give away my fortune-making opportunity?". If they share it, they'll lose it. But I don't think either of these assertions are true - sharing an idea does not mean losing it, and even if you had a really good idea, it doesn't mean you'd make any money from it. And actually I believe most people realise this. I actually think most people don't share ideas because they're worried that the idea is stupid.
 
 Maybe if there was a simple way to share ideas, as anonymously as you like, more of these people with little ideas would share them just in case they turned out to be great?
 
-Idea description
----
+### Idea description
 
 A website for sharing ideas openly, and voting and commenting on other ideas. People could retain copyright over their idea if they want, or they could openly post ideas anonymously.
 
-Features
----
+### Features
 
 - Registration, or anonymous posting
 - Choose how liberally you want to share your idea (public domain; attribution; percentage of proceeds; keep full ownership)
@@ -41,31 +38,26 @@ Features
 - Other features to encourage collaboration? People signing up to help with an idea?
 - Extend to be a platform for ideas actually in development? (Maybe not...)
 
-Implementation
----
+### Implementation
 
 Since up-voting and tagging are fairly central features, it could be based on [AskBot](https://askbot.com/) - a [StackOverflow](http://stackoverflow.com/) clone.
 
-Open letters website
-===
+## Open letters website
 
 Quite a few people write open letters. Whether they're to MPs, GPs, organisations or individuals. By creating an open letter these people are clearly hoping that people will read their letter, but beyond sharing it on their social media platform, they don't have that much reach. I think it would be great to help people have a nice platform for sharing ideas.
 
-Idea description
----
+### Idea description
 
 A website for posting open letters really easily, and for finding other peoples' open letters.
 
-Features
----
+### Features
 
 - Publish to the website by simply BCCing the site - anonymously or for your account. Email confirmation.
 - When submitting your letter online, option to send Email someone at the same time
 - Anonymous posting
 - Tagging, searching, listing by tag
 
-A completely open company
-===
+## A completely open company
 
 So I work at [Canonical](http://www.canonical.com/), which is basically the full-time hobby of [almost-billionaire Mark Shuttleworth](http://www.markshuttleworth.com/). I've often thought that if I somehow came into huge wealth, I would like to start a company, to see how radically I could challenge standard corporate practices and still be at least modestly successful.
 
@@ -73,13 +65,11 @@ Organisations and Coorporations can now be significant seats of power within soc
 
 However, I believe that all organisations will eventually become self-protective (and therefore bad for society at large) without oversight. So above all, I believe that companies should be open and transparent in all their practices, so they remain answerable to society, and that this idea should be pushed as far as possible.
 
-Idea description
----
+### Idea description
 
 Create a company or organisation that genuinely pushes the boundaries of how transparent, collaborative and community-sensitive an organisation can be. Open up financial records, salaries and company processes. Have a democratic process for decision-making within the company, and also one for community input. Encourage communication and debate with society at large.
 
-Features
----
+### Features
 
 - A charter-like set of founding principles which codify the democratic ideas of the organisation
 - Easily accessible open financial records, profits, including tax payments, salaries
@@ -91,8 +81,7 @@ Features
 - Online system for community members to request data from the organisation
 - Data should only be withheld if there's a strong moral (rather than profit-based) reason for doing so (an obvious example would be that it exposes personal information)
 
-Implementation
----
+### Implementation
 
 So this is a tricky one. If I had a billion dollars, I would create this company. But in the absence of that, you really need an idea to collaborate on before you create an organisation.
 

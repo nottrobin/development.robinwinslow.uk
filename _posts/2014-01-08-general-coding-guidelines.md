@@ -11,8 +11,7 @@ tags:
 
 I wrote this set of programming principles for my team to follow back in 2012. I'm sure there are many like it, but this one is mine. May you find it useful.
 
-Writing code
-===
+## Writing code
 
 Try to write [expressive code](http://en.wikipedia.org/wiki/Self-documenting).
 
@@ -22,8 +21,7 @@ Practicing [Behaviour-Driven Development](http://en.wikipedia.org/wiki/Behaviour
 
 [Do less](https://www.gov.uk/designprinciples#second): Before writing a new piece of functionality, go and look for similary solutions that already exist and extend them.
 
-Code architecture
----
+### Code architecture
 
 [Namespace](http://en.wikipedia.org/wiki/Namespace_(computer_science)) your classes, and [code to an interface](http://stackoverflow.com/questions/383947/what-does-it-mean-to-program-to-an-interface) (this is an implementation of the [Design by Contract](http://en.wikipedia.org/wiki/Design_by_contract) principle), and make your interfaces (both programming interfaces and user-interfaces) [as simple as possible](https://www.gov.uk/designprinciples#fourth).
 
@@ -38,8 +36,7 @@ Some useful design patterns:
 - [The adapter pattern](http://en.wikipedia.org/wiki/Adapter_pattern) (for useful abstraction of layers - like the data layer)
 - [The factory method pattern](http://en.wikipedia.org/wiki/Factory_pattern) (although be careful: Creating multiple factory classes is often [overengineering](http://en.wikipedia.org/wiki/Overengineering))
 
-Tools
-===
+## Tools
 
 Try to learn an [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment) with advanced features. These can really save you a lot of time:
 

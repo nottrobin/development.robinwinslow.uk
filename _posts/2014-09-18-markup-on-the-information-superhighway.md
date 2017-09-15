@@ -23,18 +23,15 @@ HTML is the basic component of the Internet. We all use the Internet. If you tak
 
 Understanding the interplay between markup and the Internet is important for anyone who writes content for the Internet
 
-Simplicity and accessibility
-===
+## Simplicity and accessibility
 
-Openness
----
+### Openness
 
 We write JavaScript, CSS and back-end code for simplicity and clarity just so other *developers*, and probably only developer in *our team* can easily read and work on the code.
 
 HTML is always the most public and central part of all our information, it is the *most import thing* to make as simple and intuitive as possible. Our HTML might be downloaded, viewed or hacked around with by *anyone*. They don't need to be a developer by trade. Anyone who knows how to "view source" can read our markup. Anyone who knows how to click "save web page" can hack around it.
 
-Good writing
----
+### Good writing
 
 I'd like to suggest that anyone who writes professionally, in today's world, should have some understanding of how markup works.
 
@@ -44,8 +41,7 @@ I would therefore posit that using the correct tag to markup your information is
 
 If you're ever writing markup, go and familiarise yourself with the HTML extensions in HTML5. And if you have something new to markup (e.g. a pull-quote, a code-block or a graph) give it a Google, see what best practice is.
 
-Accessibility
----
+### Accessibility
 
 A tempting attitude to take to writing markup is to focus on the average user, or maybe at least users within the inter-quartile range. If you look at Google Analytics, you will see that almost all visits to our sites are from people with modern, HTML5 & ECMAScript 5 capable browsers. As long as things look good on that setup, it's not *so* important to cover the edge-cases.
 
@@ -57,8 +53,7 @@ Fortunately, there's a simple formula - if you understand the *basic* components
 
 One of the beautiful things about the web is it's actually impossible to predict exactly how people are going to want to use it. But simplicity and directness are your friends.
 
-Referencing
-===
+## Referencing
 
 The Internet is a collection of links. The real genius of HTML is its extremely light referencing system.
 
@@ -70,26 +65,22 @@ People follow links to discover new content, but more importantly, search engine
 
 This is where an understanding matters not just to people who write in HTML, but anyone who writes content for the Internet.
 
-Link often
----
+### Link often
 
 When you're writing, especially if you're explaining a concept, if ever you use a term which you think could be described in more depth, find a link for it. People will thank you.
 
-Link text
----
+### Link text
 
 Rather than just adding the full link into the page's text (e.g. "see: www.example.com"), or writing "click here", add the link to a relevant part of your sentence. This is important because search engines will use your link text to help describe what that link is about.
 
 It's also helpful if your link text is not exactly the same as simply the title of the post you're linking to. This is because it's helpful for that page to be described in many different ways, organically, by people linking to it.
 
-IDs and anchors
----
+### IDs and anchors
 
 Your readers will thank you for specific linking. If the topic you're trying to cover with your link is under a sub-heading half way down the document, see if you can find an anchor which will take them straight there (example.com#heading3).
 
 On the development side, I believe that responsible HTML will contain IDs for this reason. Each heading, sub-heading or useful document section should ideally have an ID set on it, so people can link directly to that section if they need to.
 
-Thank you
-===
+## Thank you
 
 You're not going to do most of what I've said above, most of the time. But I think just keeping it in mind will make a difference. Learning how to write responsibly for the web is a creative and infinite journey. But every time you publish anything, and even better if you make an extra link or find a new more specific markup tag, you're strengthening the Internet. Thank you.
