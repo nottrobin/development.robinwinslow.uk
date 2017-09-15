@@ -1,14 +1,14 @@
 ---
-title: Where do I sign up for the Open Access Movement?
-description:
-    Learning all about Aaron Swartz after he committed suicide has made me (like many others) want to
-    do more for the Open Access movement. Where do I sign up?
+description: Learning all about Aaron Swartz after he committed suicide has made me
+  (like many others) want to do more for the Open Access movement. Where do I sign
+  up?
+image_url: https://assets.ubuntu.com/v1/c220f0a5-Where+do+I+sign+up+for+the+Open+Access+Movement+.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: http://blogs.plos.org/everyone/files/2015/07/Open-Access-logo.png
 tags:
-  - dev
-  - politics
-  - personal
+- dev
+- politics
+- personal
+title: Where do I sign up for the Open Access Movement?
 ---
 
 I really wish I had the emotional eloquence to express what John Grubb Atkinson did so beautifully:

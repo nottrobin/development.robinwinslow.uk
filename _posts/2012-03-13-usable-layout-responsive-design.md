@@ -1,11 +1,11 @@
 ---
-title: Usable layout (responsive design)
 description: Some examples of responsive layouts
+image_url: https://assets.ubuntu.com/v1/cb72983d-Usable+layout+responsive+design+.svg?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Responsive_svg.svg
 tags:
-  - front-end
-  - dev
+- front-end
+- dev
+title: Usable layout (responsive design)
 ---
 
 I originally wrote this post in June 2010 on my Wordpress blog. I like to think it was before the internet caught onto the idea of responsive design. I'm now re-posting it on Tumblr (My wordpress has been decommissioned).

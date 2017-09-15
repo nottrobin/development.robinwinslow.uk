@@ -1,12 +1,13 @@
 ---
+description: How to fork the Symfony 2 standard PHP project and install dependencies
+  locally using Composer on Ubuntu
+image_url: https://assets.ubuntu.com/v1/a7b9ba07-Installing+Symfony+2+by+creating+a+github+fork.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Installing Symfony 2 by creating a github fork"
-description: "How to fork the Symfony 2 standard PHP project and install dependencies locally using Composer on Ubuntu"
-image_url: https://www.brainvire.com/wp-content/uploads/logo_symphony2_gl.png
 tags:
-    - dev
-    - back-end
-    - symfony
+- dev
+- back-end
+- symfony
+title: Installing Symfony 2 by creating a github fork
 ---
 
 The Symfony 2 [standard project](https://github.com/symfony/symfony-standard) suggests that you install it in [one of two ways](https://github.com/symfony/symfony-standard/blob/900fc9d3cafa06a4b6d023b99d5e75fffaf74fe1/README.md#1-installing-the-standard-edition):

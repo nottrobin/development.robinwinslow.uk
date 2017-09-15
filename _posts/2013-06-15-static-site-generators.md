@@ -1,13 +1,14 @@
 ---
+description: Why technically proficient editors, bloggers, and especially web developers,
+  should all use static site generators for their own sites
+image_url: https://assets.ubuntu.com/v1/2fa38689-static+sites.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Blog like a pro with static site generators - it's easier than you think"
-description: "Why technically proficient editors, bloggers, and especially web developers, should all use static site generators for their own sites"
-image_url: https://assets.ubuntu.com/v1/2fa38689-static+sites.png
 tags:
-    - dev
-    - blogging
-    - server-side
-    - canonical
+- dev
+- blogging
+- server-side
+- canonical
+title: Blog like a pro with static site generators - it's easier than you think
 ---
 
 Static site generators (like [Jekyll](http://jekyllrb.com/) and [Hyde](http://ringce.com/hyde)) offer a much simpler and more transparent way to create a website. There's a small learning curve, but it's totally worth it. Especially if you're a developer already.

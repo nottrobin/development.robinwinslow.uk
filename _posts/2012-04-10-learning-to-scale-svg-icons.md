@@ -1,11 +1,11 @@
 ---
-title: Learning to scale SVG icons
 description: Some examples of how to mitigate issues with managing SVG icons in mark-up.
+image_url: https://assets.ubuntu.com/v1/3e978ca7-Learning+to+scale+SVG+icons.svg?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/8/83/Circle_scaling.svg
 tags:
-  - dev
-  - front-end
+- dev
+- front-end
+title: Learning to scale SVG icons
 ---
 
 I had this idea to make my homepage actually just an index of all my online profiles - a link to Facebook, a link to Github, a link to this Tumblr blog etc. - Partly to comply with the [relMeAuth microformat](http://microformats.org/wiki/RelMeAuth).

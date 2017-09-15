@@ -1,12 +1,12 @@
 ---
-title: Python learnings from PyCon
-description: "Interesting technical talks I heard at my first PyCon."
+description: Interesting technical talks I heard at my first PyCon.
+image_url: https://assets.ubuntu.com/v1/f3f649f4-Python+learnings+from+PyCon.jpg?h=160
 layout: post
-image_url: https://pbs.twimg.com/profile_images/857898544640008194/Ya_WC28d.jpg
 tags:
-  - dev
-  - personal
-  - canonical
+- dev
+- personal
+- canonical
+title: Python learnings from PyCon
 ---
 
 (Also published [on Canonical's design team blog][c0d53c6a])

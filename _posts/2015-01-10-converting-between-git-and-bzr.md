@@ -1,13 +1,14 @@
 ---
+description: In my team, we often work in both git and bzr version control systems.
+  This is a little guide about managing both together.
+image_url: https://assets.ubuntu.com/v1/9b885339-bzr+to+git.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Converting projects between Git and Bazaar"
-description: "In my team, we often work in both git and bzr version control systems. This is a little guide about managing both together."
-image_url: https://assets.ubuntu.com/v1/9b885339-bzr+to+git.png
 tags:
-    - front-end
-    - back-end
-    - dev
-    - canonical
+- front-end
+- back-end
+- dev
+- canonical
+title: Converting projects between Git and Bazaar
 ---
 
 Here in the [design team](http://design.canonical.com/team/) we use both [Bazaar](http://en.wikipedia.org/wiki/GNU_Bazaar) and [Git](http://git-scm.com/) to keep track our projects' hostory.

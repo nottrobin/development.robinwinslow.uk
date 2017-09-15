@@ -1,12 +1,12 @@
 ---
-title: TMUX and SSH auto-login with ssh-agent (finally!)
 description: The steps necessary to get TMUX ssh-agent correctly configured.
+image_url: https://assets.ubuntu.com/v1/4c279a5f-TMUX+and+SSH+auto+login+with+ssh+agent+finally+.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: http://deployeveryday.com/img/setup_tmux.png
 tags:
-  - unix
-  - dev
-  - back-end
+- unix
+- dev
+- back-end
+title: TMUX and SSH auto-login with ssh-agent (finally!)
 ---
 
 I finally got this working, so I thought I'd blog about it.

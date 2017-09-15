@@ -1,8 +1,9 @@
 ---
-title: "Command-line usability: A terminal user's thought process"
-description: "As a terminal user with a keen interest in usability, I explored my thought process when learning a new CLI tool, and made some basic UX recommendations."
+description: As a terminal user with a keen interest in usability, I explored my thought
+  process when learning a new CLI tool, and made some basic UX recommendations.
+image_url: https://assets.ubuntu.com/v1/74c7c7f7-cli.jpg?h=160
 layout: post
-image_url: https://assets.ubuntu.com/v1/74c7c7f7-cli.jpg
+title: 'Command-line usability: A terminal user''s thought process'
 ---
 
 I've been thinking about the usability of command-line terminals a lot recently.

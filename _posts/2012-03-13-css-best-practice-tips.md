@@ -1,14 +1,14 @@
 ---
-title: CSS best practice tips
 description: Some (slightly contentious) general rules for writing good CSS.
+image_url: https://assets.ubuntu.com/v1/a1aab0b1-CSS+best+practice+tips.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png
 tags:
-  - CSS
-  - front-end
-  - best-practice
-  - dev
-  - canonical
+- CSS
+- front-end
+- best-practice
+- dev
+- canonical
+title: CSS best practice tips
 ---
 
 ## Never use IDs

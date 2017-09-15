@@ -1,13 +1,14 @@
 ---
+description: How we significantly reduced the load on the ubuntu.com servers by caching
+  location-specific download pages.
+image_url: https://assets.ubuntu.com/v1/74ef0c00-ubuntu+location.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Saving ubuntu.com on download day: caching location specific pages"
-description: "How we significantly reduced the load on the ubuntu.com servers by caching location-specific download pages."
-image_url: https://assets.ubuntu.com/v1/74ef0c00-ubuntu+location.png?h=160
 tags:
-    - back-end
-    - front-end
-    - dev
-    - canonical
+- back-end
+- front-end
+- dev
+- canonical
+title: 'Saving ubuntu.com on download day: caching location specific pages'
 ---
 
 <small>(This article is was <a href="http://design.canonical.com/2014/08/saving-ubuntu-com-on-download-day-caching-location-specific-pages/">originally posted on design.canonical.com</a>)</small>

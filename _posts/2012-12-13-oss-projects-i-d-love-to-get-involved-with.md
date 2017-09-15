@@ -1,11 +1,11 @@
 ---
-title: OSS projects I'd love to get involved with...
-description: ... if I had the time (this list will grow)
+description: '... if I had the time (this list will grow)'
+image_url: https://assets.ubuntu.com/v1/1a70a80b-opensource.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://abi-laboratory.pro/images/opensource1.png
 tags:
-  - dev
-  - canonical
+- dev
+- canonical
+title: OSS projects I'd love to get involved with...
 ---
 
 ... if I had the time (this list will grow)

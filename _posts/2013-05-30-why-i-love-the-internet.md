@@ -1,13 +1,14 @@
 ---
+description: A little brain-dump about my passions and how it all adds up to absolutely
+  loving the internet and everything it stands for
+image_url: https://assets.ubuntu.com/v1/a70c4120-i+heart+internet.png?w=230
 layout: post
-title: 'Why I love the internet'
-description: 'A little brain-dump about my passions and how it all adds up to absolutely loving the internet and everything it stands for'
-image_url: https://assets.ubuntu.com/v1/a70c4120-i+heart+internet.png
 tags:
-    - dev
-    - politics
-    - personal
-    - canonical
+- dev
+- politics
+- personal
+- canonical
+title: Why I love the internet
 ---
 
 I have many interests, but I think there are two common thread running through them all:

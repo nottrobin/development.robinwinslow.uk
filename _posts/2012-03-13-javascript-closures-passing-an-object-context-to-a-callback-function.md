@@ -1,12 +1,12 @@
 ---
-title: "JavaScript closures &#58; Passing an Object context to a callback function"
+description: A useful application for JavaScript Closures - passing object context.
+image_url: https://assets.ubuntu.com/v1/aa447931-JavaScript+closures+58+Passing+an+Object+context+to+a+callback+function.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-description: "A useful application for JavaScript Closures - passing object context."
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Parentesi_Graffe.svg/576px-Parentesi_Graffe.svg.png
 tags:
-  - JavaScript
-  - dev
-  - front-end
+- JavaScript
+- dev
+- front-end
+title: JavaScript closures &#58; Passing an Object context to a callback function
 ---
 
 This is the first really useful application for [JavaScript closures](https://developer.mozilla.org/en/JavaScript/Guide/Closures) that I've found.

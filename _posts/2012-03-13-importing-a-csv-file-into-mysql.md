@@ -1,13 +1,14 @@
 ---
-title: Importing a CSV file into MySQL
-description: A simple PHP command-line script for importing data from a CSV file into a MySQL database.
+description: A simple PHP command-line script for importing data from a CSV file into
+  a MySQL database.
+image_url: https://assets.ubuntu.com/v1/0f43c01e-Importing+a+CSV+file+into+MySQL.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mysql-dolphin-square.svg/300px-Mysql-dolphin-square.svg.png
 tags:
-  - PHP
-  - dev
-  - back-end
-  - MySQL
+- PHP
+- dev
+- back-end
+- MySQL
+title: Importing a CSV file into MySQL
 ---
 
 I just wrote this script, and it seems pretty generic so I'm going to share it with The Internet. This will import data from a [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) into a MySQL database table. Two rules:

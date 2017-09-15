@@ -1,11 +1,12 @@
 ---
-title: Installing Vagrant on CentOS - the more reliable way
-description: Vagrant installation on CentOS is a tad unreliable. Installing with Ruby Gems is the answer.
+description: Vagrant installation on CentOS is a tad unreliable. Installing with Ruby
+  Gems is the answer.
+image_url: https://assets.ubuntu.com/v1/8b7a4912-Installing+Vagrant+on+CentOS+the+more+reliable+way.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/8/87/Vagrant.png
 tags:
-  - dev
-  - devops
+- dev
+- devops
+title: Installing Vagrant on CentOS - the more reliable way
 ---
 
 I've been playing around with [Vagrant](http://vagrantup.com/) lately. It's a "virtualized development tool" - a tool for quickly configuring and spinning up virtual machines for a software project.

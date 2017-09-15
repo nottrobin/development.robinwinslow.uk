@@ -1,11 +1,12 @@
 ---
-title: My piratebay mirror
-description: A link to my mirror of the PirateBay search engine, and a list of other such mirrors.
+description: A link to my mirror of the PirateBay search engine, and a list of other
+  such mirrors.
+image_url: https://assets.ubuntu.com/v1/f5402d8f-My+piratebay+mirror.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://d1s83tmo8l7caa.cloudfront.net/app/uploads/2015/06/19211804/pirate-bay.png
 tags:
-  - dev
-  - politics
+- dev
+- politics
+title: My piratebay mirror
 ---
 
 ## Update (2013-07-29)

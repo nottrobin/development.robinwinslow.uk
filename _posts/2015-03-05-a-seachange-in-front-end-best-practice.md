@@ -1,12 +1,13 @@
 ---
-title: A seachange in front-end best practice - but not for a while
+description: With the advent of HTTP/2, many front-end performance best practices
+  will change. But we should only switch over when the browser support is there.
+image_url: https://assets.ubuntu.com/v1/a87b7568-A+seachange+in+front+end+best+practice+but+not+for+a+while.jpeg?h=160
 layout: post
-description: "With the advent of HTTP/2, many front-end performance best practices will change. But we should only switch over when the browser support is there."
-image_url: http://www.cyberdefensemagazine.com/wp-content/uploads/2016/04/HTTP2.jpg
 tags:
-  - dev
-  - front-end
-  - back-end
+- dev
+- front-end
+- back-end
+title: A seachange in front-end best practice - but not for a while
 ---
 
 Despite [some reservations](https://queue.acm.org/detail.cfm?id=2716278), it looks like [HTTP/2](http://en.wikipedia.org/wiki/HTTP/2) is very definitely the future of the Internet.

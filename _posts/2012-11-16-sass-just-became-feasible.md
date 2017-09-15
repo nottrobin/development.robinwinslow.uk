@@ -1,12 +1,13 @@
 ---
-title: Sass just became feasible
-description: Now that Chrome Developer Tools and Firebug support Sass debugging, CSS pre-processors have a viable future.
+description: Now that Chrome Developer Tools and Firebug support Sass debugging, CSS
+  pre-processors have a viable future.
+image_url: https://assets.ubuntu.com/v1/8ad08872-Sass+just+became+feasible.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png
 tags:
-  - dev
-  - CSS
-  - front-end
+- dev
+- CSS
+- front-end
+title: Sass just became feasible
 ---
 
 I've been interested in CSS pre-processors for a while. They solve the inherent CSS problem of repeatable code blocks, and thus enable [grid systems](http://semantic.gs/) that don't [litter markup with "styling" classes](http://webdesignernotebook.com/css/are-css-frameworks-evil/).

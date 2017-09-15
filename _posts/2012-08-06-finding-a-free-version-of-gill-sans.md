@@ -1,11 +1,12 @@
 ---
-title: Finding a free version of Gill Sans
-description: Many sites use Gill Sans. Here are some suggestions of how to use it for free.
+description: Many sites use Gill Sans. Here are some suggestions of how to use it
+  for free.
+image_url: https://assets.ubuntu.com/v1/c043961a-Finding+a+free+version+of+Gill+Sans.jpg?h=160
 layout: post
-image_url: https://mir-s3-cdn-cf.behance.net/project_modules/disp/00b0fe7734493.560b0afac5fac.jpg
 tags:
-  - dev
-  - front-end
+- dev
+- front-end
+title: Finding a free version of Gill Sans
 ---
 
 Many sites, including the new [Gov.UK](http://gov.uk), use a font called [Gill Sans](http://en.wikipedia.org/wiki/Gill_Sans). It's a pretty font.

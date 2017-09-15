@@ -1,12 +1,13 @@
 ---
-layout: post
-title: "Host your site with HTTPS for free"
-description: "How to get completely free HTTPS (SSL or TLS) encrypted website hosting with Redhat Openshift."
+description: How to get completely free HTTPS (SSL or TLS) encrypted website hosting
+  with Redhat Openshift.
 image_url: https://assets.ubuntu.com/v1/19894b93-https+everywhere.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 tags:
-    - back-end
-    - dev
-    - canonical
+- back-end
+- dev
+- canonical
+title: Host your site with HTTPS for free
 ---
 
 If you glance up to the address bar, you will see that this post is being served securely. I've done this because I believe strongly in the importance of [internet privacy](http://en.wikipedia.org/wiki/Internet_privacy), and I support the [Reset The Net](https://www.resetthenet.org/) campaign to encrypt the web.

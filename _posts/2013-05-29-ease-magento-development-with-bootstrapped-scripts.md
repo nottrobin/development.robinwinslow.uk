@@ -1,12 +1,14 @@
 ---
+description: Mini scripts are super-helpful in magento development. This will explain
+  how to bootstrap them and give a simple example of how to select a category and
+  get its children.
+image_url: https://assets.ubuntu.com/v1/dc670197-Ease+Magento+development+with+bootstrapped+scripts.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: 'Ease Magento development with bootstrapped scripts'
-description: 'Mini scripts are super-helpful in magento development. This will explain how to bootstrap them and give a simple example of how to select a category and get its children.'
-image_url: https://icepay.com/wp-content/uploads/2014/10/magento-logo11.png
 tags:
-    - dev
-    - magento
-    - back-end
+- dev
+- magento
+- back-end
+title: Ease Magento development with bootstrapped scripts
 ---
 
 If you work in Magento a lot, you'll come to many many points when you need to manipulate the models in Magento programmatically.

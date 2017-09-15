@@ -1,12 +1,12 @@
 ---
+description: A bunch of useful tips for programming well (written in 2012)
+image_url: https://assets.ubuntu.com/v1/57d7e9cf-Best+practice+tips+for+programmers.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Best-practice tips for programmers"
-description: "A bunch of useful tips for programming well (written in 2012)"
-image_url: https://www.podfeet.com/blog/wp-content/uploads/2016/09/PBS_Logo-1.png
 tags:
-    - dev
-    - back-end
-    - canonical
+- dev
+- back-end
+- canonical
+title: Best-practice tips for programmers
 ---
 
 I wrote this set of programming principles for my team to follow back in 2012. I'm sure there are many like it, but this one is mine. May you find it useful.

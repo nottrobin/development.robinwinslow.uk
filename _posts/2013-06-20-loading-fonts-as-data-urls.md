@@ -1,13 +1,14 @@
 ---
+description: Including your fonts inside your CSS files as Data URLs can help with
+  performance
+image_url: https://assets.ubuntu.com/v1/ab52723e-Loading+fonts+as+Data+URLs+for+performance.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-title: "Loading fonts as Data URLs for performance"
-description: "Including your fonts inside your CSS files as Data URLs can help with performance"
-image_url: https://lh3.googleusercontent.com/4Y5YAZDyHa27IJBKGfhxBGvG9D0c542t62KjLMbwaU0mT8wvpo4015EvaKYaLiuM10VB=w300
 tags:
-    - front-end
-    - dev
-    - fonts
-    - canonical
+- front-end
+- dev
+- fonts
+- canonical
+title: Loading fonts as Data URLs for performance
 ---
 
 With the advent of [web fonts](https://en.wikipedia.org/wiki/Web_typography#Web_fonts) (e.g. from [Google Fonts](https://www.google.com/fonts/)), thankfully web designers are no longer tied to a limited set of "web safe" fonts.
