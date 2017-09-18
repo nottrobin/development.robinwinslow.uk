@@ -2,23 +2,30 @@
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<section class="p-strip--light">
+  <div class="row">
+    <div class="u-equal-height">
+      <div class="col-7 suffix-1 u-vertically-center">
+        <div>
+          <h1>There's nothing here</h1>
+          <p class="date">HTTP error: <a href="https://en.wikipedia.org/wiki/HTTP_404">404 Not Found</a></p>
+          <p class="p-heading--five">There's no page <noscript>here.</noscript><script>document.write('at <code>' + location.pathname + '</code>')</script>.</p>
+          <p>Things you could try:</p>
+          <ul>
+            <li>
+              <noscript><a class="p-link--external" href="https://duckduckgo.com/?q=site:robinwinslow.uk">search for the page</a></noscript>
+              <script>
+                document.write('<a class="p-link--external" href="https://duckduckgo.com?q=site:robinwinslow.uk+'+ location.pathname.substring(1).replace('/', '+') + '">search for "' + location.pathname.substring(1).replace('/', ' ') + '"</a>');
+              </script>
+            </li>
+            <li><a href="/">visit the homepage</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <img style="padding-top: 2rem" src="https://assets.ubuntu.com/v1/4caff59a-Tumbeasts_sign1.png" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
