@@ -1,13 +1,14 @@
 ---
+title: Using a virtual environment with Python 3.4
+date: 2013-12-26 00:00:00 Z
+tags:
+- dev
+- back-end
 description: I recently started learning Python and Django, and so I've been working
   out how to setup a good virtual environment. Here's how to do it the native way
   in Python 3.4.
 image_url: https://assets.ubuntu.com/v1/d4f10591-python+virtualenv.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-tags:
-- dev
-- back-end
-title: Using a virtual environment with Python 3.4
 ---
 
 I've been learning Python recently. I had a choice between learning Python 2.7 or Python 3, and I chose the latter. It may be true that many people still work in Python 2.7, but I thought I should start off as up-to-date as possible.

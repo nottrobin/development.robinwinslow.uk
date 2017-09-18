@@ -1,13 +1,14 @@
 ---
-description: I often have ideas for digital projects or organisations, and I really
-  see no point keeping them secret, so I'm going to start trying to share them here.
-image_url: https://assets.ubuntu.com/v1/558d4ae2-Some+of+my+ideas+for+projects.jpeg?h=160
-layout: post
+title: Some of my ideas for projects
+date: 2015-01-08 00:00:00 Z
 tags:
 - blogging
 - dev
 - politics
-title: Some of my ideas for projects
+description: I often have ideas for digital projects or organisations, and I really
+  see no point keeping them secret, so I'm going to start trying to share them here.
+image_url: https://assets.ubuntu.com/v1/558d4ae2-Some+of+my+ideas+for+projects.jpeg?h=160
+layout: post
 ---
 
 Ideas are cheap.

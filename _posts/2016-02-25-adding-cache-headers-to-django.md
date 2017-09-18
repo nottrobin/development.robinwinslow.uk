@@ -1,12 +1,13 @@
 ---
+title: 'Django HTTP headers: Controlling caching on cn.ubuntu.com'
+date: 2016-02-25 00:00:00 Z
+tags:
+- dev
 description: As optimising web performance becomes more and more important, it's becoming
   essential to carefully manage your caching headers. But Django doesn't make it hat
   easy.
 image_url: https://assets.ubuntu.com/v1/5f9dc6c0-Django+HTTP+headers+Controlling+caching+on+cn+ubuntu+com.jpeg?h=160
 layout: post
-tags:
-- dev
-title: 'Django HTTP headers: Controlling caching on cn.ubuntu.com'
 ---
 
 <small>Also published [on design.canonical.com](http://design.canonical.com/).</small>

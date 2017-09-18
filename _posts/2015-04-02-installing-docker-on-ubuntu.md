@@ -1,12 +1,13 @@
 ---
+title: Getting Docker running on Ubuntu 14.04
+date: 2015-04-02 00:00:00 Z
+tags:
+- dev
+- back-end
 description: There are more steps than there should be to get docker running on ubuntu
   14.04. I outline them here.
 image_url: https://assets.ubuntu.com/v1/8e77842e-Getting+Docker+running+on+Ubuntu+14+04.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-tags:
-- dev
-- back-end
-title: Getting Docker running on Ubuntu 14.04
 ---
 
 Docker is a very neat tool, and there's [a good guide on the Docker website](https://docs.docker.com/installation/ubuntulinux/#installing-docker-on-ubuntu) to installing it in Ubuntu, but I always find it's just slightly more cumbersome than this guide suggests.

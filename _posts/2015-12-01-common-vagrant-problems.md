@@ -1,10 +1,11 @@
 ---
+title: Common Vagrant problems
+date: 2015-12-01 00:00:00 Z
+tags:
+- dev
 description: Some common issues that I've found with setting up Vagrant boxes
 image_url: https://assets.ubuntu.com/v1/4c2d92a3-Common+Vagrant+problems.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-tags:
-- dev
-title: Common Vagrant problems
 ---
 
 I wrote this as a draft ages ago, and I haven't really quality-checked it. I'm publishing it as I have decided to make a more concerted effort not to filter myself on my blog, and publish my drafts.

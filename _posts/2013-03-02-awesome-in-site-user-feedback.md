@@ -1,14 +1,15 @@
 ---
-description: How I discovered the Uservoice in-site feedback widget, and integrated
-  it with Github Issues using Zapier
-image_url: https://assets.ubuntu.com/v1/311a9116-An+awesome+in+site+user+feedback+tool+with+Github+integration.svg?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: An awesome in-site user feedback tool - with Github integration
+date: 2013-03-02 00:00:00 Z
 tags:
 - dev
 - front-end
 - UX
 - canonical
-title: An awesome in-site user feedback tool - with Github integration
+description: How I discovered the Uservoice in-site feedback widget, and integrated
+  it with Github Issues using Zapier
+image_url: https://assets.ubuntu.com/v1/311a9116-An+awesome+in+site+user+feedback+tool+with+Github+integration.svg?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 I was just entering an expense on [Splitwise](http://splitwise.com/)

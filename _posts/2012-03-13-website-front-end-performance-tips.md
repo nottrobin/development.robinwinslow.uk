@@ -1,12 +1,13 @@
 ---
-image_url: https://assets.ubuntu.com/v1/3e9feff8-Website+front+end+performance+tips.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Website front-end performance tips
+date: 2012-03-13 00:00:00 Z
 tags:
 - dev
 - performance
 - front-end
 - canonical
-title: Website front-end performance tips
+image_url: https://assets.ubuntu.com/v1/3e9feff8-Website+front+end+performance+tips.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 ## Design performance

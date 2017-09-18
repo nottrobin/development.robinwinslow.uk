@@ -1,8 +1,16 @@
+---
 title: Notes on development | Robin
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: development@robinwinslow.co.uk
-description: >
-  Quick posts about software development. I like to focus on open source, web technologies, devops and security.
+description: 'Quick posts about software development. I like to focus on open source,
+  web technologies, devops and security.
 
-# Build settings
+'
 markdown: kramdown
-

@@ -1,12 +1,13 @@
 ---
-description: The arguments for dropping support for IE8 in your website
-image_url: https://assets.ubuntu.com/v1/30e6a738-no+more+ie6.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: What you can do if you stop supporting IE8
+date: 2013-02-28 00:00:00 Z
 tags:
 - dev
 - front-end
 - canonical
-title: What you can do if you stop supporting IE8
+description: The arguments for dropping support for IE8 in your website
+image_url: https://assets.ubuntu.com/v1/30e6a738-no+more+ie6.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 Try visiting this site in IE8. Go on, I dare ya. Alright, I'll tell you - it's an ugly white page with black writing.

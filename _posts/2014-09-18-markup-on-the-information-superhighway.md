@@ -1,15 +1,16 @@
 ---
-description: A fairly informal piece about the importance of understanding markup
-  and the internet.
-image_url: https://assets.ubuntu.com/v1/bea730a9-The+importance+of+markup+on+the+information+superhighway.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: The importance of markup on the information superhighway
+date: 2014-09-18 00:00:00 Z
 tags:
 - front-end
 - dev
 - blogging
 - politics
 - canonical
-title: The importance of markup on the information superhighway
+description: A fairly informal piece about the importance of understanding markup
+  and the internet.
+image_url: https://assets.ubuntu.com/v1/bea730a9-The+importance+of+markup+on+the+information+superhighway.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 Following are my long-form notes for a [short presentation](http://prezi.com/rkxcaj2hebal/the-information-superhighway/) I gave to the [team here at Canonical](http://design.canonical.com/team).

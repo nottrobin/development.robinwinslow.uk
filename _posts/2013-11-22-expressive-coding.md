@@ -1,14 +1,14 @@
 ---
+title: Writing expressive code
+date: 2013-11-22 00:00:00 Z
+tags:
+- dev
+- canonical
 description: Reading some legacy code today reminded me of some general principles
   that programmers could follow to make code easier to manage for future developers.
   I may have got a bit carried away...
 image_url: https://assets.ubuntu.com/v1/4d178b22-Writing+expressive+code.jpeg?w=230
 layout: post
-published: true
-tags:
-- dev
-- canonical
-title: Writing expressive code
 ---
 
 As any coder gains experience, they inevitebly learn more and more ways to solve the same problem.

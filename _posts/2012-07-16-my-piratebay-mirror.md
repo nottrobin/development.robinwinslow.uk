@@ -1,12 +1,13 @@
 ---
+title: My piratebay mirror
+date: 2012-07-16 00:00:00 Z
+tags:
+- dev
+- politics
 description: A link to my mirror of the PirateBay search engine, and a list of other
   such mirrors.
 image_url: https://assets.ubuntu.com/v1/f5402d8f-My+piratebay+mirror.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-tags:
-- dev
-- politics
-title: My piratebay mirror
 ---
 
 ## Update (2013-07-29)

@@ -1,13 +1,14 @@
 ---
-description: Introduction to Marcello's code workshops at Session Digital, and the
-  principles of BDD and Simple Design.
-image_url: https://assets.ubuntu.com/v1/b4f62061-Continuous+Improvement+and+TDD+BDD.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Continuous Improvement and TDD/BDD
+date: 2012-12-07 00:00:00 Z
 tags:
 - agile
 - dev
 - canonical
-title: Continuous Improvement and TDD/BDD
+description: Introduction to Marcello's code workshops at Session Digital, and the
+  principles of BDD and Simple Design.
+image_url: https://assets.ubuntu.com/v1/b4f62061-Continuous+Improvement+and+TDD+BDD.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 So, having just accompanied my blog on

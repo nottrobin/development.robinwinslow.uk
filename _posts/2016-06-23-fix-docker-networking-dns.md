@@ -1,13 +1,14 @@
 ---
-description: Within certain networks, docker is unable to resolve DNS correctly. When
-  this happens, here's how to fix it.
-image_url: https://assets.ubuntu.com/v1/4c8dcce0-Fix+Docker+s+networking+DNS+config.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Fix Docker's networking DNS config
+date: 2016-06-23 00:00:00 Z
 tags:
 - back-end
 - dev
 - canonical
-title: Fix Docker's networking DNS config
+description: Within certain networks, docker is unable to resolve DNS correctly. When
+  this happens, here's how to fix it.
+image_url: https://assets.ubuntu.com/v1/4c8dcce0-Fix+Docker+s+networking+DNS+config.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 Sometimes, [Docker](https://www.docker.com/)'s internet connectivity won't be working properly, which can lead to a number of obscure errors with your applications. In my experience, this is usually because [DNS](http://en.wikipedia.org/wiki/Domain_name_system) lookups are failing in Docker images.

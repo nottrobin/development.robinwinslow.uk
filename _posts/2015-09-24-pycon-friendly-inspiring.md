@@ -1,13 +1,14 @@
 ---
-description: A report on my experience of the keynote speeches at my first PyCon.
-image_url: https://assets.ubuntu.com/v1/ba50be85-pycon+uk+crown.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Keynotes from my first PyCon - friendly and inspiring
+date: 2015-09-24 00:00:00 Z
 tags:
 - personal
 - dev
 - politics
 - canonical
-title: Keynotes from my first PyCon - friendly and inspiring
+description: A report on my experience of the keynote speeches at my first PyCon.
+image_url: https://assets.ubuntu.com/v1/ba50be85-pycon+uk+crown.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 (Also published [on Canonical's design team blog][75548106])

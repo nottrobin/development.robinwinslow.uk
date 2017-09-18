@@ -1,13 +1,14 @@
 ---
-description: Here's a unix command to create a GitHub repository from the command-line.
-  You can even set it to be a git alias, for even more convenience.
-image_url: https://assets.ubuntu.com/v1/067e7336-github+api.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Using Github's API to create repositories from the command-line
+date: 2013-06-07 00:00:00 Z
 tags:
 - dev
 - back-end
 - git
-title: Using Github's API to create repositories from the command-line
+description: Here's a unix command to create a GitHub repository from the command-line.
+  You can even set it to be a git alias, for even more convenience.
+image_url: https://assets.ubuntu.com/v1/067e7336-github+api.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 [Git](http://git-scm.com) and [GitHub](https://GitHub.com) are fantastic tools for any kind of project. As soon as you start any piece of text-based work - be it a program, a diary or a novel - it makes sense to keep version control, and to have it backed up online somewhere.

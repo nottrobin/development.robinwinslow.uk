@@ -1,13 +1,14 @@
 ---
+title: Creating a minimal Python application server for experimenting
+date: 2016-02-14 00:00:00 Z
+tags:
+- dev
+- back-end
 description: As a web developer, it can be incredibly useful to be able to spin up
   a quick server to inspect and manipulate raw requests. And if you're used to working
   in Python, this little script is just the ticket.
 image_url: https://assets.ubuntu.com/v1/2efd11ac-Creating+a+minimal+Python+application+server+for+experimenting.jpeg
 layout: post
-tags:
-- dev
-- back-end
-title: Creating a minimal Python application server for experimenting
 ---
 
 I often find myself wanting to play around with a tiny Python web application

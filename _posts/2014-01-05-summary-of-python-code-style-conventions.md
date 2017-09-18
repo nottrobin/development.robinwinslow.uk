@@ -1,13 +1,14 @@
 ---
+title: A summary of python code style conventions
+date: 2014-01-05 00:00:00 Z
+tags:
+- back-end
+- dev
 description: Recently I've been learning Python. I just found out about PEP 8 and
   PEP 257, which are guidelines for how to write python code. To solidify them in
   my mind, I'm going to summarise them here.
 image_url: https://assets.ubuntu.com/v1/bd52907f-python+coding.png?w=230&h=160&mode=fill&bg=0000
 layout: post
-tags:
-- back-end
-- dev
-title: A summary of python code style conventions
 ---
 
 ["PEP 8: Style Guide for Python Code"](http://www.python.org/dev/peps/pep-0008/) and ["PEP 257: Docstring Conventions"](http://www.python.org/dev/peps/pep-0257/) aren't exactly long, but they're also not easily skimmable.

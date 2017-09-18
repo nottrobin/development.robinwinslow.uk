@@ -1,12 +1,13 @@
 ---
+title: What to do if your Vagrant VM crashes
+date: 2012-10-05 00:00:00 Z
+tags:
+- dev
+- devops
 description: If your Vagrant machine crashed and when you force kill it, vagrant forgets
   about its existence - here's how to fix that.
 image_url: https://assets.ubuntu.com/v1/c75facf7-What+to+do+if+your+Vagrant+VM+crashes.png?h=160
 layout: post
-tags:
-- dev
-- devops
-title: What to do if your Vagrant VM crashes
 ---
 
 My vagrant VM crashed. I tried typing `vagrant halt` but it just tried to "gracefully" shut down the machine,

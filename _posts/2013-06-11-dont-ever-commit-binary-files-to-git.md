@@ -1,13 +1,14 @@
 ---
-description: Why you shouldn't commit binary files to a distributed version control
-  system - and how you can remove them completely if you do.
-image_url: https://assets.ubuntu.com/v1/7e800a30-Don+t+ever+commit+binary+files+to+Git+Or+what+to+do+if+you+do+.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Don't ever commit binary files to Git! Or what to do if you do.
+date: 2013-06-11 00:00:00 Z
 tags:
 - dev
 - back-end
 - git
-title: Don't ever commit binary files to Git! Or what to do if you do.
+description: Why you shouldn't commit binary files to a distributed version control
+  system - and how you can remove them completely if you do.
+image_url: https://assets.ubuntu.com/v1/7e800a30-Don+t+ever+commit+binary+files+to+Git+Or+what+to+do+if+you+do+.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 Git is a great [distributed version control system](http://en.wikipedia.org/wiki/Distributed_revision_control). It's fantastically for easily storing changed to *text files* wherever you are, and then easily copying them up to a server or servers or sharing them with your friends locally.

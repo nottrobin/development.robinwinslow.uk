@@ -1,13 +1,14 @@
 ---
-description: Introducing an open-source mailer script written in PHP and hosted on
-  Github.
-image_url: https://assets.ubuntu.com/v1/cc06c67f-Sending+emails+individually+to+many+people+in+PHP.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: Sending emails individually to many people in PHP
+date: 2012-04-10 00:00:00 Z
 tags:
 - dev
 - PHP
 - back-end
-title: Sending emails individually to many people in PHP
+description: Introducing an open-source mailer script written in PHP and hosted on
+  Github.
+image_url: https://assets.ubuntu.com/v1/cc06c67f-Sending+emails+individually+to+many+people+in+PHP.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 I just made this PHP class. It's extremely simple and easy to use for

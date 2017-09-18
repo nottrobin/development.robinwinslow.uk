@@ -1,10 +1,11 @@
 ---
+title: Note to self - technical aspirations
+date: 2012-12-12 00:00:00 Z
+tags:
+- dev
 description: A list of things I'd like to learn and achieve in technology.
 image_url: https://assets.ubuntu.com/v1/9c3222c3-Note+to+self+technical+aspirations.jpeg?h=160
 layout: post
-tags:
-- dev
-title: Note to self - technical aspirations
 ---
 
 Things for me to learn and achieve.

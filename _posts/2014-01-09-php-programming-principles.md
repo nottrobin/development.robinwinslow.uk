@@ -1,11 +1,12 @@
 ---
-description: A bunch of best practices for PHP which I wrote back in 2012
-image_url: https://assets.ubuntu.com/v1/6f61dfb8-PHP+best+practices.png?w=230&h=160&mode=fill&bg=0000
-layout: post
+title: PHP best practices
+date: 2014-01-09 00:00:00 Z
 tags:
 - dev
 - back-end
-title: PHP best practices
+description: A bunch of best practices for PHP which I wrote back in 2012
+image_url: https://assets.ubuntu.com/v1/6f61dfb8-PHP+best+practices.png?w=230&h=160&mode=fill&bg=0000
+layout: post
 ---
 
 The following are a set of best practices for coding in PHP specifically. This is meant to compliment and extend the [general programming principles](/2014/01/08/general-coding-guidelines/).
