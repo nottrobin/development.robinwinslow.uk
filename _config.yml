@@ -9,6 +9,7 @@ collections:
     title: Uploads
     output: true
 email: development@robinwinslow.co.uk
+permalink: pretty
 description: 'Quick posts about software development. I like to focus on open source,
   web technologies, devops and security.
 
