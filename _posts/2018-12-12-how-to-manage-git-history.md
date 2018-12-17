@@ -1,7 +1,8 @@
 ---
 title: 'How to manage your Git history: Tips for keeping your commits tidy'
-date: 2018-12-12
-description: A number of techniques I use frequently for maintaining control over my Git commit history in my feature branches.
+date: 2018-12-12 00:00:00 Z
+description: A number of techniques I use frequently for maintaining control over
+  my Git commit history in my feature branches.
 image_url: https://assets.ubuntu.com/v1/8f90595a-20181211_152357.jpg?w=800
 layout: post
 ---
