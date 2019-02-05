@@ -95,7 +95,7 @@ When I first drafted this post, the latest version of LXD was `2.0.0`. At the ti
 To download and start a container running [Ubuntu 18.04 Bionic Beaver][bionic], simply run:
 
 ``` bash
-lxc launch ubuntu:bionic caged-beaver  # We're naming this container "caged-beaver", but you could choose any name you like
+lxc launch ubuntu:bionic caged-beaver  # "caged-beaver" could be any name you choose
 ```
 
 It will take a while the first time as it has to download the OS image, but to
@@ -106,11 +106,11 @@ Once it's finished, check it's running:
 
 ``` bash
 $ lxc list
-+-------------+---------+--------------+------+------------+-----------+
-|    NAME     |  STATE  |     IPV4     | IPV6 |    TYPE    | SNAPSHOTS |
-+-------------+---------+--------------+------+------------+-----------+
-| caged-beaver | RUNNING | 10.95.60.183 |      | PERSISTENT | 0         |
-+-------------+---------+--------------+------+------------+-----------+
++--------------+---------+----------------------+----------------+------------+-----------+
+|     NAME     |  STATE  |         IPV4         |      IPV6      |    TYPE    | SNAPSHOTS |
++--------------+---------+----------------------+----------------+------------+-----------+
+| caged-beaver | RUNNING | 10.94.108.174 (eth0) | a:a:a:a (eth0) | PERSISTENT |           |
++--------------+---------+----------------------+----------------+------------+-----------+
 ```
 
 ## Running commands
@@ -306,6 +306,6 @@ lxc launch images:alpine/edge/amd64 alpine  # We're naming this container "alpin
 [virtual machines]: https://en.wikipedia.org/wiki/Virtual_machine "Virtual machines"
 [Vagrant]: https://www.vagrantup.com/ "Vagrant homepage"
 [install]: https://linuxcontainers.org/lxd/getting-started-cli/ "Installing LXD and the command line tool"
-[bionic]: http://releases.ubuntu.com/18.04/ "Releases: Ubuntu 18.04.1 LTS (Bionic Beaver)"
+[bionic]: https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes "Ubuntu wiki: Bionic Beaver 18.04 release notes"
 [install other remotes]: https://linuxcontainers.org/lxd/getting-started-cli/#importing-some-images "LXD official documentation: Importing some images"
 [stgraber-unpriv]: https://www.stgraber.org/2014/01/17/lxc-1-0-unprivileged-containers/ "LXC 1.0: Unprivileged containers [7/10] - Introduction to unprivileged containers"
