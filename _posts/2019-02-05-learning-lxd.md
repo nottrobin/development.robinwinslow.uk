@@ -52,7 +52,9 @@ possibilities:
 
 # Installing LXD
 
-If you're running `14.04` ("trusty") or 15.10 ("wily"), first install this PPA (if you're running `16.04` ("xenial") or higher, you should skip this step):
+*NB: If you're running `16.04` ("xenial") or higher, LXD should already be installed and you should skip this step.*
+
+If you're running `14.04` ("trusty") or `15.10` ("wily"), first install this PPA:
 
 ``` bash
 sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable  # Add the LXD official PPA
