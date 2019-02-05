@@ -41,26 +41,11 @@ Also, as containers are phenomenally faster (they can take less than one second 
 - Run each individual process in its own container with encapsulated
   dependencies (rather than whole software projects)
 
-# Installing LXD
-
-*NB: If you're running `16.04` ("xenial") or higher, LXD should already be installed and you should skip this step.*
-
-If you're running `14.04` ("trusty") or `15.10` ("wily"), first install this PPA:
-
-``` bash
-sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable  # Add the LXD official PPA
-sudo apt update        # Update apt sources to include new PPA packages
-sudo apt dist-upgrade  # Ensure existing packages are up-to-date with the new PPA
-```
-
-Now install LXD, and add yourself to the `lxd` group:
-
-``` bash
-sudo apt install lxd
-newgrp lxd
-```
-
 ## Initialising LXD
+
+LXD should be available by default in Ubuntu 16.04 Xenial and newer. You can see what version you have with `lxc --version` - if it's v2 or newer, these instructions should work for you.
+
+If you don't have `lxc` v2 or newer, refer to [the official installation guide](https://linuxcontainers.org/lxd/getting-started-cli/).
 
 Now initialise LXD, with a `dir` backend and an LXD bridge:
 
