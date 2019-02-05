@@ -7,17 +7,15 @@ image_url: https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_
 layout: post
 ---
 
-*I initially [wrote this](https://github.com/nottrobin/robinwinslow.uk/blob/66be16a8281206c7fd41d7b403be2895f4b49c24/_posts/learning-lxd.md) on 17th May, 2016 - nearly 3 years ago. I didn't publish it then, I just left it in drafts, for no good reason. Now I'm publishing it.*
-
-*I think all the advice here still works, the interface of LXD doesn't seem to have changed much. But apologies if my advice is out of date.*
+*I initially [drafted this](https://github.com/nottrobin/robinwinslow.uk/blob/66be16a8281206c7fd41d7b403be2895f4b49c24/_posts/learning-lxd.md) nearly 3 years ago. I didn't publish it then (for no good reason), so I'm publishing it now. I have gone through the article and made sure it still works with the latest LXD at the time of publishing. I also updated it to use `bionic` instead of `xenial`, and to cover [the snap version of LXD][lxd-snap] as well as [the deb][lxd-deb].*
 
 ---
 
 [Linux Containers (LXC)](https://linuxcontainers.org/) effectively spin up
 mini virtual operating systems inside Linux, except that they're much more
-light-weight, and therefore much quicker, than true [virtual machines][].
+light-weight, and therefore much quicker, than true [virtual machines][VMs].
 
-[LXD][] is a new system-wide daemon which improves performance & security,
+[LXD][] is a new system-wide daemon from Canonical's [Stéphane Graber](https://twitter.com/stgraber) which improves performance & security,
 and also offers an improve interface for the `lxc` command.
 
 You may want to skip straight to [Installing LXD](#installing-lxd) or [How to use LXD](#how-to-use-lxd).
@@ -201,7 +199,7 @@ group::rwx
 other::r-x
 ```
 
-Now we need to add permission for the LXD user IDs to access this folder. These IDs are usually `165536` (`root`) and `166536` (`ubuntu`) for the [deb version](https://packages.ubuntu.com/source/bionic/lxd), and `1000000` (`root`) and `1001000` (`ubuntu`) for the [snap version](https://snapcraft.io/lxd). These UIDs can be checked [as explained here](https://gist.github.com/nottrobin/032c7907c506f99e5fb31255f2f6ff2a).
+Now we need to add permission for the LXD user IDs to access this folder. These IDs are usually `165536` (`root`) and `166536` (`ubuntu`) for the [deb version][lxd-deb], and `1000000` (`root`) and `1001000` (`ubuntu`) for the [snap version][lxd-snap]. These UIDs can be checked [as explained here](https://gist.github.com/nottrobin/032c7907c506f99e5fb31255f2f6ff2a).
 
 Now we'll simply give all four UIDs for LXD access to our local directory with `setfacl`:
 
@@ -309,9 +307,11 @@ lxc launch images:alpine/edge/amd64 caged-mountain  # Again "caged-mountain", co
 ```
 
 [LXD]: https://linuxcontainers.org/lxd/ "Linux Containers: What's LXD?"
-[virtual machines]: https://en.wikipedia.org/wiki/Virtual_machine "Virtual machines"
+[VMs]: https://en.wikipedia.org/wiki/Virtual_machine "Virtual machines"
 [Vagrant]: https://www.vagrantup.com/ "Vagrant homepage"
 [install]: https://linuxcontainers.org/lxd/getting-started-cli/ "Installing LXD and the command line tool"
 [bionic]: https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes "Ubuntu wiki: Bionic Beaver 18.04 release notes"
 [install other remotes]: https://linuxcontainers.org/lxd/getting-started-cli/#importing-some-images "LXD official documentation: Importing some images"
 [stgraber-unpriv]: https://www.stgraber.org/2014/01/17/lxc-1-0-unprivileged-containers/ "LXC 1.0: Unprivileged containers [7/10] - Introduction to unprivileged containers"
+[lxd-snap]: https://snapcraft.io/lxd "Snapcraft: The LXD snap"
+[lxd-deb]: https://packages.ubuntu.com/source/bionic/lxd "Ubuntu packages: lxd source package"
