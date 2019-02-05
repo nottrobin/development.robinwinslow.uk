@@ -175,11 +175,18 @@ You should now be able to create and edit files in the shared folder from within
 ``` bash
 $ lxc exec caged-beaver -- touch /media/share/created-by-root
 $ lxc exec caged-beaver -- su ubuntu -c "touch /media/share/created-by-ubuntu"
+
 $ ls -l share/
 total 0
 -rw-rw-r-- 1 robin robin 0 May 16 16:55 hello
 -rw-r--r-- 1 1000000 1000000 0 May  16 17:29 created-by-root
 -rw-r--r-- 1 robin robin 0 May  16 17:29 created-by-ubuntu
+
+$ lxc exec caged-beaver -- ls -l /media/share
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 May 16 16:55 hello
+-rw-r--r-- 1 root root 0 May  16 17:29 created-by-root
+-rw-r--r-- 1 ubuntu ubuntu 0 May  16 17:29 created-by-ubuntu
 ```
 
 ## Privileged containers
