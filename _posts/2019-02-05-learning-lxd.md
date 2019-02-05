@@ -11,19 +11,15 @@ layout: post
 
 ---
 
-[Linux Containers (LXC)](https://linuxcontainers.org/) effectively spin up
-mini virtual operating systems inside Linux, except that they're much more
-light-weight, and therefore much quicker, than true [virtual machines][VMs].
+[Linux Containers (LXC)](https://linuxcontainers.org/) effectively spin up mini virtual operating systems inside Linux, except that they're much more light-weight, and therefore much quicker, than true [virtual machines][VMs].
 
-[LXD][] is a new system-wide daemon from Canonical's [Stéphane Graber](https://twitter.com/stgraber) which improves performance & security,
-and also offers an improve interface for the `lxc` command.
+[LXD][] is a new system-wide daemon from Canonical's [Stéphane Graber](https://twitter.com/stgraber) which improves performance & security, and also offers an improve interface for the `lxc` command.
 
 You may want to skip straight to [Installing LXD](#installing-lxd) or [How to use LXD](#how-to-use-lxd).
 
 # tl;dr summary
 
-Once you've [installed LXD][install], create a new container and open a bash
-terminal with:
+Once you've [installed LXD][install], create a new container and open a bash terminal with:
 
 ``` bash
 lxc launch ubuntu:bionic caged-beaver   # Download 18.04 Bionic Beaver image and start the container
@@ -32,17 +28,14 @@ lxc exec caged-beaver -- bash           # Run and attach to a bash terminal in t
 
 # Why are containers so useful?
 
-As containers are like lighter virtual machines, you can use them for very much
-the same things, but do them *much* faster:
+As containers are like lighter virtual machines, you can use them for very much the same things, but do them *much* faster:
 
 - Install & run things in a different version of Linux than is installed locally
 - Run a software project within a predictable context for development (e.g. many
   people currently use [Vagrant][] for this)
 - Test that things still work in a clean install of your operating system
 
-Also, as containers are phenomenally faster (they can take less than one
-second to start) and use much less resources, they also bring with them new
-possibilities:
+Also, as containers are phenomenally faster (they can take less than one second to start) and use much less resources, they also bring with them new possibilities:
 
 - Run many containers side-by-side, to test out large networks of interconnected services
 - Run each individual process in its own container with encapsulated
@@ -78,9 +71,7 @@ Would you like LXD to be available over the network (yes/no)? no
 Do you want to configure the LXD bridge (yes/no)? yes
 ```
 
-Now the "Package configuration" will open and ask you to configure LXD.
-If you're unsure about any of the questions, just select the default option by
-pressing `<enter>`.
+Now the "Package configuration" will open and ask you to configure LXD. If you're unsure about any of the questions, just select the default option by pressing `<enter>`.
 
 Read the [official installation guide][install].
 
@@ -96,9 +87,7 @@ To download and start a container running [Ubuntu 18.04 Bionic Beaver][bionic], 
 lxc launch ubuntu:bionic caged-beaver  # "caged-beaver" could be any name you choose
 ```
 
-It will take a while the first time as it has to download the OS image, but to
-create subsequent containers from the same image should only take a matter of
-seconds.
+It will take a while the first time as it has to download the OS image, but to create subsequent containers from the same image should only take a matter of seconds.
 
 Once it's finished, check it's running:
 
@@ -113,12 +102,9 @@ $ lxc list
 
 ## Running commands
 
-To run a command in our new container, use the `lxc exec` command. The command
-will run as the `root` user, in the `/root` directory inside the container.
+To run a command in our new container, use the `lxc exec` command. The command will run as the `root` user, in the `/root` directory inside the container.
 
-You can run any command that you would normally run in a Linux system,
-but the most immediately useful command to run is `bash`, which will drop you
-into a bash shell inside the container:
+You can run any command that you would normally run in a Linux system, but the most immediately useful command to run is `bash`, which will drop you into a bash shell inside the container:
 
 ``` bash
 $ lxc exec caged-beaver -- bash
@@ -129,9 +115,7 @@ root@caged-beaver:~#
 
 ## Networking
 
-If you [initialised LXD earlier](#initialising-lxd) with a network bridge,
-your container should already have an IP address which you can connect to
-directly:
+If you [initialised LXD earlier](#initialising-lxd) with a network bridge, your container should already have an IP address which you can connect to directly:
 
 ``` bash
 $ lxc list caged-beaver --format=json | jq -r '.[0]["state"]["network"]["eth0"]["addresses"][0]["address"]'  # Find the IP address
@@ -140,9 +124,7 @@ $ ping 10.95.60.183  # Check we can see that IP address
 64 bytes from 10.95.60.183: icmp_seq=1 ttl=64 time=0.134 ms
 ```
 
-You can use this IP address for accessing any servers that you run in your
-container. If you need to use different network settings, simply run `lxd init`
-again.
+You can use this IP address for accessing any servers that you run in your container. If you need to use different network settings, simply run `lxd init` again.
 
 ## Sharing folders
 
@@ -172,22 +154,16 @@ total 0
 
 ### Gaining write access to shared folders
 
-You'll notice that the file inside `/media/share` in the container is owned by
-`nobody:nogroup`. This is true of the directory as well, and means that root
-can't actually edit or create files inside the shared directory:
+You'll notice that the file inside `/media/share` in the container is owned by `nobody:nogroup`. This is true of the directory as well, and means that root can't actually edit or create files inside the shared directory:
 
 ``` bash
 $ lxc exec caged-beaver -- touch /media/share/hello
 touch: cannot touch '/media/share/hello': Permission denied
 ```
 
-This is because the permissions inside the container are exactly the same as
-in the host system - as in the directory is still owned by *your user*. The
-container runs as an unprivileged user and so doesn't have access to your user's
-things.
+This is because the permissions inside the container are exactly the same as in the host system - as in the directory is still owned by *your user*. The container runs as an unprivileged user and so doesn't have access to your user's things.
 
-To fix this, we can extend the permissions on the share directory to give the
-container's user access to it. Let's look at the permissions it has currently:
+To fix this, we can extend the permissions on the share directory to give the container's user access to it. Let's look at the permissions it has currently:
 
 ``` bash
 $ getfacl share
@@ -229,8 +205,7 @@ default:mask::rwx
 default:other::r-x
 ```
 
-You should now be able to create and edit files in the shared folder from
-within the container:
+You should now be able to create and edit files in the shared folder from within the container:
 
 ``` bash
 $ lxc exec caged-beaver -- touch /media/share/hello-again
@@ -240,15 +215,11 @@ hello  hello-again
 
 ## Privileged containers
 
-We can also make containers "privileged", which sets the root user inside the
-container to be the same as the root user on the host system.
+We can also make containers "privileged", which sets the root user inside the container to be the same as the root user on the host system.
 
-This would have been a way to solve the shared folders problem above, but it
-is unsafe (and in that case unnecessary), as it means that programs inside
-the container can escape into root on the host system in some circumstances.
+This would have been a way to solve the shared folders problem above, but it is unsafe (and in that case unnecessary), as it means that programs inside the container can escape into root on the host system in some circumstances.
 
-First, note that the `rootfs` directory in your container is currently owned by
-an unprivileged user:
+First, note that the `rootfs` directory in your container is currently owned by an unprivileged user:
 
 ``` bash
 $ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs  # For the Deb version
@@ -298,9 +269,7 @@ lxc image alias list ubuntu:  # List every alias in the "ubuntu" remote
 lxc image alias list images:  # List every alias in the "images" remote
 ```
 
-From the last command, we can see that there's an image available in the
-"images" remote with the alias "alpine/edge/amd64", so we could choose to
-launch an alpine container in the same way:
+From the last command, we can see that there's an image available in the "images" remote with the alias "alpine/edge/amd64", so we could choose to launch an alpine container in the same way:
 
 ``` bash
 lxc launch images:alpine/edge/amd64 caged-mountain  # Again "caged-mountain", could be any name you choose
