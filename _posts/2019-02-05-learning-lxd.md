@@ -84,7 +84,7 @@ Now the "Package configuration" will open and ask you to configure LXD.
 If you're unsure about any of the questions, just select the default option by
 pressing `<enter>`.
 
-[[official installation guide][install]]
+Read the [official installation guide][install].
 
 # How to use LXD
 
@@ -279,7 +279,7 @@ drwxr-xr-x 22 root root 22 Feb  5 15:12 /var/snap/lxd/common/mntns/var/snap/lxd/
 
 This means that the root user inside the container can now manipulate files on the host system as the root user.
 
-[Read more about unprivileged vs privileged containers][stgraber-unpriv]
+Read more about [unprivileged vs privileged containers][stgraber-unpriv].
 
 ## Launching other images
 
