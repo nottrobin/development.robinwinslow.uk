@@ -7,7 +7,13 @@ image_url: https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_
 layout: post
 ---
 
-*I initially [drafted this](https://github.com/nottrobin/robinwinslow.uk/blob/66be16a8281206c7fd41d7b403be2895f4b49c24/_posts/learning-lxd.md) nearly 3 years ago. I didn't publish it then (for no good reason), so I'm publishing it now. I have gone through the article and made sure it still works with the latest LXD at the time of publishing. I also updated it to use `bionic` instead of `xenial`, and to cover [the snap version of LXD][lxd-snap] as well as [the deb][lxd-deb].*
+*I initially [drafted this](https://github.com/nottrobin/robinwinslow.uk/blob/66be16a8281206c7fd41d7b403be2895f4b49c24/_posts/learning-lxd.md) nearly 3 years ago. I didn't publish it then (for no good reason), so I'm publishing it now.*
+
+*I have gone through the article and made sure it still works with the latest LXD at the time of publishing. I also updated it to:*
+
+- *use `bionic` instead of `xenial`*
+- *cover [the snap version of LXD][lxd-snap] as well as [the deb][lxd-deb]*
+- *use [a better method](https://blog.ubuntu.com/2016/12/08/mounting-your-home-directory-in-lxd) of sharing folders ([thanks @sparkiegeek](https://github.com/nottrobin/development.robinwinslow.uk/issues/2))*
 
 ---
 
@@ -148,54 +154,32 @@ touch: cannot touch '/media/share/hello': Permission denied
 
 This is because the permissions inside the container are exactly the same as in the host system - as in the directory is still owned by *your user*. The container runs as an unprivileged user and so doesn't have access to your user's things.
 
-To fix this, we can extend the permissions on the share directory to give the container's user access to it. Let's look at the permissions it has currently:
+To fix this, we can provide LXD access to our user's ID (probably `1000`). First we need to give our system's `root` user permission to act as our user through [subuid](http://man7.org/linux/man-pages/man5/subuid.5.html):
 
 ``` bash
-$ getfacl share
-# file: share
-# owner: {your-user}
-# group: {your-user}
-user::rwx
-group::rwx
-other::r-x
+$ echo "root:$(id -u):1" | sudo tee -a /etc/subuid
+root:1000:1
+$ echo "root:$(id -g):1" | sudo tee -a /etc/subgid
+root:1000:1
 ```
 
-Now we need to add permission for the LXD user IDs to access this folder. These IDs are usually `165536` (`root`) and `166536` (`ubuntu`) for the [deb version][lxd-deb], and `1000000` (`root`) and `1001000` (`ubuntu`) for the [snap version][lxd-snap]. These UIDs can be checked [as explained here](https://gist.github.com/nottrobin/032c7907c506f99e5fb31255f2f6ff2a).
-
-Now we'll simply give all four UIDs for LXD access to our local directory with `setfacl`:
+We can then map the default `ubuntu` user for our new container to the user ID for our system user:
 
 ``` bash
-$ setfacl -Rm user:lxd:rwx,default:user:lxd:rwx,user:165536:rwx,default:user:165536:rwx,user:166536:rwx,default:user:166536:rwx,user:1000000:rwx,default:user:1000000:rwx,user:1001000:rwx,default:user:1001000:rwx share
-$ getfacl share  # Check permissions again
-# file: share
-# owner: {your-user}
-# group: {your-user}
-user::rwx
-user:lxd:rwx
-user:165536:rwx
-user:166536:rwx
-user:1000000:rwx
-user:1001000:rwx
-group::r-x
-mask::rwx
-other::r-x
-default:user::rwx
-default:user:lxd:rwx
-default:user:165536:rwx
-default:user:166536:rwx
-default:user:1000000:rwx
-default:user:1001000:rwx
-default:group::r-x
-default:mask::rwx
-default:other::r-x
+$ lxc config set caged-beaver raw.idmap "both $(id -u) $(id -g)"
+$ lxc restart caged-beaver
 ```
 
-You should now be able to create and edit files in the shared folder from within the container:
+You should now be able to create and edit files in the shared folder from within the container. The container's `ubuntu` user can create files as your system user, and the container's `root` user can create files under its own UID:
 
 ``` bash
-$ lxc exec caged-beaver -- touch /media/share/hello-again
-$ ls share
-hello  hello-again
+$ lxc exec caged-beaver -- touch /media/share/created-by-root
+$ lxc exec caged-beaver -- su ubuntu -c "touch /media/share/created-by-ubuntu"
+$ ls -l share/
+total 0
+-rw-rw-r-- 1 robin robin 0 May 16 16:55 hello
+-rw-r--r-- 1 1000000 1000000 0 May  16 17:29 created-by-root
+-rw-r--r-- 1 robin robin 0 May  16 17:29 created-by-ubuntu
 ```
 
 ## Privileged containers
