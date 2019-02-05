@@ -86,8 +86,7 @@ pressing `<enter>`.
 
 # How to use LXD
 
-At the time of writing the latest version of LXD is `2.0.0`.
-LXD is evolving fast, and things may change in subsequent versions.
+When I first drafted this post, the latest version of LXD was `2.0.0`. At the time of publishing, it's now [`3.9`](https://discuss.linuxcontainers.org/t/lxd-3-9-has-been-released/3732) - however I believe all the commands mentioned below still work.
 
 ## Quickly start a container
 
