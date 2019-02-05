@@ -28,8 +28,8 @@ Once you've [installed LXD][install], create a new container and open a bash
 terminal with:
 
 ``` bash
-lxc launch ubuntu:16.04 xenial  # Download 16.04 image and start the container
-lxc exec xenial -- bash         # Run and attach to a bash terminal in the container
+lxc launch ubuntu:bionic caged-beaver   # Download 16.04 image and start the container
+lxc exec caged-beaver -- bash           # Run and attach to a bash terminal in the container
 ```
 
 # Why are containers so useful?
@@ -92,10 +92,10 @@ LXD is evolving fast, and things may change in subsequent versions.
 
 ## Quickly start a container
 
-To download and start a container running [Ubuntu 16.04][], simply run:
+To download and start a container running [Ubuntu 18.04 Bionic Beaver][bionic], simply run:
 
 ``` bash
-lxc launch ubuntu:16.04 xenial  # We're naming this container "xenial", but you could choose any name you like
+lxc launch ubuntu:bionic caged-beaver  # We're naming this container "caged-beaver", but you could choose any name you like
 ```
 
 It will take a while the first time as it has to download the OS image, but to
@@ -106,11 +106,11 @@ Once it's finished, check it's running:
 
 ``` bash
 $ lxc list
-+--------+---------+------+------+------------+-----------+
-|  NAME  |  STATE  | IPV4 | IPV6 |    TYPE    | SNAPSHOTS |
-+--------+---------+------+------+------------+-----------+
-| xenial | RUNNING |      |      | PERSISTENT | 0         |
-+--------+---------+------+------+------------+-----------+
++-------------+---------+--------------+------+------------+-----------+
+|    NAME     |  STATE  |     IPV4     | IPV6 |    TYPE    | SNAPSHOTS |
++-------------+---------+--------------+------+------------+-----------+
+| caged-beaver | RUNNING | 10.95.60.183 |      | PERSISTENT | 0         |
++-------------+---------+--------------+------+------------+-----------+
 ```
 
 ## Running commands
@@ -123,10 +123,10 @@ but the most immediately useful command to run is `bash`, which will drop you
 into a bash shell inside the container:
 
 ``` bash
-$ lxc exec xenial -- bash
-root@xenial:~# echo "hello from inside the container!"
+$ lxc exec caged-beaver -- bash
+root@caged-beaver:~# echo "hello from inside the container!"
 hello from inside the container!
-root@xenial:~#
+root@caged-beaver:~#
 ```
 
 ## Networking
@@ -136,8 +136,8 @@ your container should already have an IP address which you can connect to
 directly:
 
 ``` bash
-$ lxc exec xenial -- ifconfig | grep "inet addr"  # Find the IP address
-          inet addr:10.95.60.183  Bcast:10.95.60.255  Mask:255.255.255.0
+$ lxc list caged-beaver --format=json | jq -r '.[0]["state"]["network"]["eth0"]["addresses"][0]["address"]'  # Find the IP address
+10.95.60.183
 $ ping 10.95.60.183  # Check we can see that IP address
 64 bytes from 10.95.60.183: icmp_seq=1 ttl=64 time=0.134 ms
 ```
@@ -159,16 +159,16 @@ So if we want to create a `share` directory and share it with the container at `
 ``` bash
 mkdir share  # Create a new "share" directory
 touch share/hello  # Create a "hello" file inside the directory
-lxc config device add xenial shareddir disk source=`pwd`/share path=/media/share  # Share it with the container
+lxc config device add caged-beaver shareddir disk source=`pwd`/share path=/media/share  # Share it with the container
 ```
 
 Now let's check the device is set up and that we can see it inside the container:
 
 ``` bash
-$ lxc config device list xenial  # List all devices in the container
+$ lxc config device list caged-beaver  # List all devices in the container
 root: disk
 shareddir: disk
-$ lxc exec xenial -- ls -l /media/share                                                                
+$ lxc exec caged-beaver -- ls -l /media/share
 total 0
 -rw-rw-r-- 1 nobody nogroup 0 May 16 16:55 hello
 ```
@@ -180,7 +180,7 @@ You'll notice that the file inside `/media/share` in the container is owned by
 can't actually edit or create files inside the shared directory:
 
 ``` bash
-$ lxc exec xenial -- touch /media/share/hello
+$ lxc exec caged-beaver -- touch /media/share/hello
 touch: cannot touch '/media/share/hello': Permission denied
 ```
 
@@ -205,15 +205,15 @@ other::r-x
 First we need to find the user ID of the container's user:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/xenial/rootfs
-drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/xenial/rootfs
-# Here the user ID is 165536
+$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
+drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs              # The root user's ID is 165536
+drwxr-xr-x 22 166536 166536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs/home/ubuntu  # The ubuntu user's ID is 166536
 ```
 
 Then we can add extra permissions for this user and the LXD user with `setfacl`:
 
 ``` bash
-$ setfacl -Rm user:lxd:rwx,default:user:lxd:rwx,user:165536:rwx,default:user:165536:rwx share
+$ setfacl -Rm user:lxd:rwx,default:user:lxd:rwx,user:165536:rwx,default:user:165536:rwx,user:166536:rwx,default:user:166536:rwx share
 $ getfacl share  # Check permissions again
 # file: share
 # owner: {your-user}
@@ -221,12 +221,14 @@ $ getfacl share  # Check permissions again
 user::rwx
 user:lxd:rwx
 user:165536:rwx
+user:166536:rwx
 group::rwx
 mask::rwx
 other::r-x
 default:user::rwx
 default:user:lxd:rwx
 default:user:165536:rwx
+default:user:166536:rwx
 default:group::rwx
 default:mask::rwx
 default:other::r-x
@@ -236,7 +238,7 @@ You should now be able to create and edit files in the shared folder from
 within the container:
 
 ``` bash
-$ lxc exec xenial -- touch /media/share/hello-again
+$ lxc exec caged-beaver -- touch /media/share/hello-again
 $ ls share
 hello  hello-again
 ```
@@ -254,21 +256,21 @@ First, note that the `rootfs` directory in your container is currently owned by
 an unprivileged user:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/xenial/rootfs
-drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/xenial/rootfs
+$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
+drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs
 ```
 
 To make the container privileged:
 
 ``` bash
-lxc config set xenial security.privileged true
+lxc config set caged-beaver security.privileged true
 ```
 
 And note that the `rootfs` owner is now `root` in the host:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/xenial/rootfs
-drwxr-xr-x 22 root root 4096 May 17 17:18 /var/lib/lxd/containers/xenial/rootfs
+$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
+drwxr-xr-x 22 root root 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs
 ```
 
 [Read more about unprivileged vs privileged containers][stgraber-unpriv]
@@ -278,7 +280,7 @@ drwxr-xr-x 22 root root 4096 May 17 17:18 /var/lib/lxd/containers/xenial/rootfs
 In the command we ran earlier:
 
 ``` bash
-lxc launch ubuntu:16.04 xenial
+lxc launch ubuntu:bionic caged-beaver
 ```
 
 "ubuntu" is the name of a remote image list and "16.04" is the alias of an
@@ -306,6 +308,6 @@ lxc launch images:alpine/edge/amd64 alpine  # We're naming this container "alpin
 [Vagrant]: https://www.vagrantup.com/ "Vagrant homepage"
 [how to use LXD]: #how-to-use-lxd
 [install]: https://linuxcontainers.org/lxd/getting-started-cli/ "Installing LXD and the command line tool"
-[Ubuntu 16.04]: ""
+[bionic]: http://releases.ubuntu.com/18.04/ "Releases: Ubuntu 18.04.1 LTS (Bionic Beaver)"
 [install other remotes]: https://linuxcontainers.org/lxd/getting-started-cli/#importing-some-images "LXD official documentation: Importing some images"
 [stgraber-unpriv]: https://www.stgraber.org/2014/01/17/lxc-1-0-unprivileged-containers/ "LXC 1.0: Unprivileged containers [7/10] - Introduction to unprivileged containers"
