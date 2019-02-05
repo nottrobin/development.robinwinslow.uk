@@ -1,5 +1,5 @@
 ---
-title: How to use Linux Containers with LXD 2, and why you might want to
+title: How to use Linux Containers with LXD, and why you might want to
 date: 2019-02-05 00:00:00 Z
 description: Getting up and running with LXD containers - Quick usage; basic networking;
   sharing folders with write access
