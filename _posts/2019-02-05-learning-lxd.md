@@ -1,8 +1,7 @@
 ---
-title: How to use Linux Containers with LXD 2, and why you might want to
+title: 'How to use Linux Containers with LXD 2, and why you might want to'
 date: 2019-02-05 00:00:00 Z
-description: Getting up and running with LXD containers - Quick usage; basic networking;
-  sharing folders with write access
+description: Getting up and running with LXD containers - Quick usage; basic networking; sharing folders with write access
 image_url: https://upload.wikimedia.org/wikipedia/commons/4/40/Linux_Containers_logo.png
 layout: post
 ---
@@ -28,7 +27,7 @@ Once you've [installed LXD][install], create a new container and open a bash
 terminal with:
 
 ``` bash
-lxc launch ubuntu:bionic caged-beaver   # Download 16.04 image and start the container
+lxc launch ubuntu:bionic caged-beaver   # Download 18.04 Bionic Beaver image and start the container
 lxc exec caged-beaver -- bash           # Run and attach to a bash terminal in the container
 ```
 
@@ -52,8 +51,7 @@ possibilities:
 
 # Installing LXD
 
-If you're running `14.04` ("trusty") or 15.10 ("wily"), first install this PPA
-(if you're running `16.04` ("xenial") you should skip this step):
+If you're running `14.04` ("trusty") or 15.10 ("wily"), first install this PPA (if you're running `16.04` ("xenial") or higher, you should skip this step):
 
 ``` bash
 sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable  # Add the LXD official PPA
@@ -283,8 +281,7 @@ In the command we ran earlier:
 lxc launch ubuntu:bionic caged-beaver
 ```
 
-"ubuntu" is the name of a remote image list and "16.04" is the alias of an
-image from that list.
+"ubuntu" is the name of a remote image list and "bionic" is the alias of an image from that list.
 
 To find other images, there are several list commands:
 
