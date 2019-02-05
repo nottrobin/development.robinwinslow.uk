@@ -166,8 +166,7 @@ Now let's check the device is set up and that we can see it inside the container
 
 ``` bash
 $ lxc config device list caged-beaver  # List all devices in the container
-root: disk
-shareddir: disk
+shareddir
 $ lxc exec caged-beaver -- ls -l /media/share
 total 0
 -rw-rw-r-- 1 nobody nogroup 0 May 16 16:55 hello
@@ -202,18 +201,12 @@ group::rwx
 other::r-x
 ```
 
-First we need to find the user ID of the container's user:
+Now we need to add permission for the LXD user IDs to access this folder. These IDs are usually `165536` (`root`) and `166536` (`ubuntu`) for the [deb version](https://packages.ubuntu.com/source/bionic/lxd), and `1000000` (`root`) and `1001000` (`ubuntu`) for the [snap version](https://snapcraft.io/lxd). These UIDs can be checked [as explained here](https://gist.github.com/nottrobin/032c7907c506f99e5fb31255f2f6ff2a).
+
+Now we'll simply give all four UIDs for LXD access to our local directory with `setfacl`:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
-drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs              # The root user's ID is 165536
-drwxr-xr-x 22 166536 166536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs/home/ubuntu  # The ubuntu user's ID is 166536
-```
-
-Then we can add extra permissions for this user and the LXD user with `setfacl`:
-
-``` bash
-$ setfacl -Rm user:lxd:rwx,default:user:lxd:rwx,user:165536:rwx,default:user:165536:rwx,user:166536:rwx,default:user:166536:rwx share
+$ setfacl -Rm user:lxd:rwx,default:user:lxd:rwx,user:165536:rwx,default:user:165536:rwx,user:166536:rwx,default:user:166536:rwx,user:1000000:rwx,default:user:1000000:rwx,user:1001000:rwx,default:user:1001000:rwx share
 $ getfacl share  # Check permissions again
 # file: share
 # owner: {your-user}
@@ -222,14 +215,18 @@ user::rwx
 user:lxd:rwx
 user:165536:rwx
 user:166536:rwx
-group::rwx
+user:1000000:rwx
+user:1001000:rwx
+group::r-x
 mask::rwx
 other::r-x
 default:user::rwx
 default:user:lxd:rwx
 default:user:165536:rwx
 default:user:166536:rwx
-default:group::rwx
+default:user:1000000:rwx
+default:user:1001000:rwx
+default:group::r-x
 default:mask::rwx
 default:other::r-x
 ```
@@ -256,22 +253,31 @@ First, note that the `rootfs` directory in your container is currently owned by
 an unprivileged user:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
+$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs  # For the Deb version
 drwxr-xr-x 22 165536 165536 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs
+# OR
+$ sudo ls -ld /var/snap/lxd/common/mntns/var/snap/lxd/common/lxd/storage-pools/default/containers/caged-beaver/rootfs  # For the snap version
+drwxr-xr-x 22 1000000 1000000 22 Jan 31 15:51 /var/snap/lxd/common/mntns/var/snap/lxd/common/lxd/storage-pools/default/containers/caged-beaver/rootfs
 ```
 
-To make the container privileged:
+To make the container privileged, and then restart it:
 
 ``` bash
 lxc config set caged-beaver security.privileged true
+lxc restart caged-beaver
 ```
 
 And note that the `rootfs` owner is now `root` in the host:
 
 ``` bash
-$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs
+$ ls -ld /var/lib/lxd/containers/caged-beaver/rootfs  # For the Deb version
 drwxr-xr-x 22 root root 4096 May 17 17:18 /var/lib/lxd/containers/caged-beaver/rootfs
+# OR
+$ sudo ls -ld /var/snap/lxd/common/mntns/var/snap/lxd/common/lxd/storage-pools/default/containers/caged-beaver/rootfs  # For the snap version
+drwxr-xr-x 22 root root 22 Feb  5 15:12 /var/snap/lxd/common/mntns/var/snap/lxd/common/lxd/storage-pools/default/containers/caged-beaver/rootfs
 ```
+
+This means that the root user inside the container can now manipulate files on the host system as the root user.
 
 [Read more about unprivileged vs privileged containers][stgraber-unpriv]
 
@@ -299,7 +305,7 @@ From the last command, we can see that there's an image available in the
 launch an alpine container in the same way:
 
 ``` bash
-lxc launch images:alpine/edge/amd64 alpine  # We're naming this container "alpine", but you could choose any name you like
+lxc launch images:alpine/edge/amd64 caged-mountain  # Again "caged-mountain", could be any name you choose
 ```
 
 [LXD]: https://linuxcontainers.org/lxd/ "Linux Containers: What's LXD?"
