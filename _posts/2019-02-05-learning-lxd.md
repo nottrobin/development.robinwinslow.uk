@@ -20,7 +20,7 @@ light-weight, and therefore much quicker, than true [virtual machines][].
 [LXD][] is a new system-wide daemon which improves performance & security,
 and also offers an improve interface for the `lxc` command.
 
-You may want to skip straight to [Installing LXD][] or [How to use LXD][].
+You may want to skip straight to [Installing LXD](#installing-lxd) or [How to use LXD](#how-to-use-lxd).
 
 # tl;dr summary
 
@@ -304,7 +304,6 @@ lxc launch images:alpine/edge/amd64 alpine  # We're naming this container "alpin
 [LXD]: https://linuxcontainers.org/lxd/ "Linux Containers: What's LXD?"
 [virtual machines]: https://en.wikipedia.org/wiki/Virtual_machine "Virtual machines"
 [Vagrant]: https://www.vagrantup.com/ "Vagrant homepage"
-[how to use LXD]: #how-to-use-lxd
 [install]: https://linuxcontainers.org/lxd/getting-started-cli/ "Installing LXD and the command line tool"
 [bionic]: http://releases.ubuntu.com/18.04/ "Releases: Ubuntu 18.04.1 LTS (Bionic Beaver)"
 [install other remotes]: https://linuxcontainers.org/lxd/getting-started-cli/#importing-some-images "LXD official documentation: Importing some images"
