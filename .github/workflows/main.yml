@@ -11,8 +11,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        run: echo 'Output - ${{ github.event.actor }}'
       - uses: Naturalclar/issue-action@v1.0.0
         if: github.actor == 'webteam-app'
         with:
