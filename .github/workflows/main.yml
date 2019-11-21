@@ -1,7 +1,9 @@
 name: "Set Issue Label"
 on:
+  issue:
+    types: [created]
   issue_comment:
-    types: [created, deleted]
+    types: [created]
 
 jobs:
   test:
