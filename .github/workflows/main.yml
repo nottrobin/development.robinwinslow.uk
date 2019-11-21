@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: Naturalclar/issue-action@v1.0.0
-        if: github.event.comment.user.login == "webteam-app"
+        if: github.event.comment.user.login == 'webteam-app'
         with:
           keywords: '["help", "wanted"]'
           labels: '["help wanted"]'
