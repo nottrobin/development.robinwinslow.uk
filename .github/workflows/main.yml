@@ -14,7 +14,7 @@ jobs:
       - name: Echo
         run: echo 'Output - ${{ github.event.actor }}'
       - uses: Naturalclar/issue-action@v1.0.0
-        if: github.event.comment.user.login == 'webteam-app'
+        if: github.actor == 'webteam-app'
         with:
           keywords: '["help", "wanted"]'
           labels: '["help wanted"]'
