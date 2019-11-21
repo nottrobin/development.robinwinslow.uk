@@ -9,10 +9,10 @@ on:
 
 jobs:
   test:
-    if: github.event.issue.comment.author == "webteam-app"
     runs-on: ubuntu-latest
     steps:
       - uses: Naturalclar/issue-action@v1.0.0
+        if: github.event.issue.comment.author == "webteam-app"
         with:
           keywords: '["help", "wanted"]'
           labels: '["help wanted"]'
