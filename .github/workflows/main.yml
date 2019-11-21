@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo
-        run: echo 'Output: ${{ github.event }}'
+        run: echo 'Output - ${{ github.event.actor.login }}'
       - uses: Naturalclar/issue-action@v1.0.0
         if: github.event.comment.user.login == 'webteam-app'
         with:
