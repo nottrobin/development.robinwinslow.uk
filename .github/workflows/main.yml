@@ -1,6 +1,6 @@
 name: "Set Issue Label"
 on:
-  issue:
+  issues:
     types: [opened, edited]
   issue_comment:
     types: [created, edited]
