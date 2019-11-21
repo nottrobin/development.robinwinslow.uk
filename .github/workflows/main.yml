@@ -11,8 +11,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: Naturalclar/issue-action@v1.0.0
+      - name: Add "help wanted"
         if: github.actor == 'webteam-app'
+        uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["help", "wanted"]'
           labels: '["help wanted"]'
